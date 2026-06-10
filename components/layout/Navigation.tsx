@@ -61,8 +61,6 @@ export function Navigation() {
     setOpen(false);
   }, [pathname]);
 
-  const wordmarkMain = siteConfig.name.toUpperCase();
-
   return (
     <>
       <header
@@ -82,15 +80,21 @@ export function Navigation() {
                 ? "opacity-100 translate-x-0 pointer-events-auto"
                 : "opacity-0 -translate-x-3 pointer-events-none"
             )}
-            aria-label={`${siteConfig.name} home`}
+            aria-label="Misraje Real Estate Partners home"
             tabIndex={showLogo ? 0 : -1}
             aria-hidden={!showLogo}
           >
-            <span className="font-serif text-white text-xl md:text-[26px] tracking-[0.18em] transition-colors group-hover:text-gold-500">
-              {wordmarkMain}
+            {/* Misraje Real Estate Partners wordmark, the firm brand carried
+                across every neighborhood site (matches misraje-site and
+                laurelwood-site). The neighborhood name lives in the hero and
+                page titles via siteConfig.name, not here. font-cormorant is an
+                undefined utility (no-op), so this inherits Inter Tight exactly
+                as misraje/laurelwood render it. */}
+            <span className="font-cormorant text-white text-xl md:text-[26px] tracking-[0.2em] transition-colors group-hover:text-gold-500">
+              MISRAJE
             </span>
-            <span className="text-white/85 text-[9px] md:text-[10px] tracking-[0.28em] mt-1.5 uppercase">
-              {siteConfig.tagline}
+            <span className="text-white/85 text-[9px] md:text-[10px] tracking-[0.28em] mt-1.5">
+              Real Estate Partners
             </span>
           </Link>
 

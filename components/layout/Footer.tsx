@@ -42,14 +42,14 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Oversized wordmark watermark */}
+        {/* Oversized wordmark watermark (the MISRAJE firm brand, per misraje-site) */}
         <div className="relative py-12">
           <div
             aria-hidden="true"
             className="select-none text-center font-display font-light text-white/[0.04] whitespace-nowrap"
-            style={{ fontSize: "clamp(4rem, 14vw, 12rem)", letterSpacing: "0.12em", lineHeight: "1" }}
+            style={{ fontSize: "clamp(6rem, 18vw, 16rem)", letterSpacing: "0.15em", lineHeight: "1" }}
           >
-            {siteConfig.name.toUpperCase()}
+            MISRAJE
           </div>
         </div>
 
