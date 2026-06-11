@@ -1,6 +1,7 @@
 // content/home.ts
 // Render-ready copy for the Fryman Estates home page (kept out of components per
-// the architecture rule). NO em dashes.
+// the architecture rule). Home body copy is the original Fryman Wix wording,
+// restored verbatim (lush/prestige voice) per the client's direction.
 
 export type Testimonial = {
   id: string;
@@ -20,22 +21,31 @@ export const homeContent = {
 
   welcome: {
     eyebrow: "Why Location Matters in Fryman Estates, Studio City",
-    heading: "Welcome to Fryman Estates in Studio City",
-    body: "Fryman Estates sits in the Studio City hills, a few minutes from Beverly Hills, Hollywood, and the Sunset Strip. The streets are quiet and the lots are large, with gated drives and estate-scale properties set back from the road. Fryman Canyon Park is close enough to reach on foot, so its trails are part of daily life here. Tucked behind Mulholland Drive among mature trees and canyon terrain, the neighborhood keeps its distance from the city while staying a short drive from it.",
+    heading: "Prestige, Privacy, and Proximity",
+    body: [
+      "As local Studio City real estate experts, we understand that location is everything when buying or selling a home. Fryman Estates real estate offers an exceptional opportunity to live in one of the most exclusive and private neighborhoods in Los Angeles. With its rare combination of seclusion, luxury homes, and proximity to top LA destinations, Fryman Estates stands out as a coveted hillside enclave.",
+      "Located just minutes from Beverly Hills, Hollywood, and the Sunset Strip, this scenic neighborhood blends the peaceful charm of canyon living with easy access to city life. Residents enjoy gated drives, spacious estate properties, and direct access to Fryman Canyon Park, a favorite spot for hiking and outdoor recreation.",
+      "Tucked behind Mulholland Drive and surrounded by mature trees and lush canyon terrain, Fryman Estates homes for sale are known for their architectural significance, privacy, and natural beauty. Whether you're seeking a secluded retreat or an investment in Studio City luxury real estate, Fryman offers a unique opportunity to own in one of LA's most desirable neighborhoods.",
+      "Scroll down to view real-time commute data from Fryman Estates to key Los Angeles destinations and see how conveniently connected this hillside sanctuary truly is.",
+    ],
   },
 
   history: {
     heading: "A Hillside Neighborhood Shaped by Its History",
     body: [
-      "Fryman Estates runs along Mulholland Drive, wrapped by the open space of Fryman Canyon. Its story reaches back close to a century, and the neighborhood still carries that history in its streets, its trees, and its homes.",
-      "Much of what defines the area is the result of deliberate choices: careful planning, a long record of preservation, and a preference for custom-built homes that work with the hillside rather than against it. Towering oaks shade the winding streets, and the canyon around them has been kept largely intact.",
-      "The homes range from Mid-Century Modern to Contemporary, with privacy and a connection to the landscape common to nearly all of them. It is a hillside neighborhood that has held onto its character as the rest of Los Angeles grew around it.",
+      "Nestled along Mulholland Drive and surrounded by the natural beauty of Fryman Canyon, Fryman Estates is one of the most prestigious and desirable hillside neighborhoods in Los Angeles. With a history dating back nearly a century, this area is recognized for its architectural excellence, deep sense of privacy, and preserved environment. Towering oak trees line the winding streets, and Fryman Canyon Park offers scenic hiking trails just steps from many homes.",
+      "The long-standing appeal of Fryman Estates real estate lies in its thoughtful neighborhood planning, commitment to preservation, and collection of custom-built homes. Architectural styles include Mid-Century Modern, Contemporary, and other distinguished designs. Many properties offer gated entrances, expansive views, and lush landscaping that reflect the pride of ownership found throughout the community.",
+      "Whether you are looking to purchase a home in Fryman Estates or want to learn more about the history of this iconic Studio City neighborhood, Fryman offers a rare combination of timeless character, modern comfort, and unmatched privacy. It remains one of the most respected and exclusive addresses in all of Studio City.",
     ],
   },
 
   boundary: {
     heading: "Explore the Fryman Estates Boundaries",
-    body: "Fryman Estates occupies a defined pocket of hillside in Studio City, bordered by canyon terrain and a handful of winding access roads. The shape of the neighborhood follows the land and a long effort to keep it intact, private while staying close to the rest of Studio City and Los Angeles.",
+    body: [
+      "Fryman Estates occupies a clearly defined pocket of hillside terrain in Studio City, shaped by both geography and long-standing community preservation efforts. The boundaries shown on the map below reflect the area long recognized for its architectural continuity, mature landscaping, and commitment to maintaining the neighborhood's identity.",
+      "With winding roads, limited access points, and natural canyon borders, Fryman Estates offers a secluded setting that provides privacy while remaining closely connected to the fabric of Studio City and greater Los Angeles. This balance between thoughtful planning and preserved natural surroundings is part of what makes the community so enduringly desirable.",
+      "To better understand the layout and landscape of Fryman Estates, see the map below. It illustrates how the area's topography, accessibility, and long-standing design contribute to the neighborhood's exclusivity and lasting appeal.",
+    ],
   },
 
   architecture: {
@@ -47,8 +57,11 @@ export const homeContent = {
   heritage: {
     eyebrow: "Heritage",
     title: "Where Heritage Lives Beneath the Trees",
-    body: "Tree-lined streets and mature landscaping run through Fryman Estates, with many homes set behind gates and framed by native growth. Oak and sycamore trees, some of them centuries old, form a canopy that gives the neighborhood much of its character.",
-    oakCaption: "One oak here is thought to be around 400 years old. It stood on a property whose former owners included Mickey Rooney and Drew Barrymore, and one of its branches once held a swing that Judy Garland and other guests were known to use.",
+    body: [
+      "Fryman Estates is known for its peaceful setting, mature landscaping, and enduring sense of character. Tree-lined streets wind through the hills, with homes often tucked behind gates and framed by native vegetation. Towering oak and sycamore trees, some more than 400 years old, create a natural canopy that defines the neighborhood's visual identity and contributes to its timeless appeal.",
+      "This lush hillside environment, combined with architectural variety and a strong sense of privacy, makes Fryman Estates one of the most treasured residential enclaves in Studio City. The result is a neighborhood that feels secluded yet deeply rooted in the broader landscape of Los Angeles real estate.",
+    ],
+    oakCaption: "This 400-year-old oak tree in Fryman Estates stood on the property of Hollywood elite, including former owners Mickey Rooney and Drew Barrymore. One of its branches held a swing that Judy Garland and other guests were known to enjoy.",
   },
 
   why: {

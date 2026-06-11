@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { CommuteWidget } from "@/components/sections/CommuteWidget";
 import { FrymanBoundary } from "@/components/sections/FrymanBoundary";
@@ -9,6 +10,30 @@ export const metadata = {
   description:
     "Fryman Estates: the hyperlocal guide to the Fryman Canyon neighborhood of Studio City, presented by Misraje Real Estate Partners.",
 };
+
+const FRYMAN_CANYON_PARK_URL =
+  "https://www.alltrails.com/trail/us/california/fryman-canyon-trail";
+
+// Minimal inline-link helper, used only in the Welcome body: links the first
+// "Fryman Canyon Park" mention to its AllTrails page (opens in a new tab).
+function linkifyFrymanCanyonPark(text: string) {
+  const phrase = "Fryman Canyon Park";
+  const idx = text.indexOf(phrase);
+  if (idx === -1) return text;
+  return [
+    text.slice(0, idx),
+    <a
+      key="fcp"
+      href={FRYMAN_CANYON_PARK_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gold-600 underline underline-offset-2 decoration-gold-600/40 hover:text-gold-500 transition-colors"
+    >
+      {phrase}
+    </a>,
+    text.slice(idx + phrase.length),
+  ];
+}
 
 export default function HomePage() {
   const c = homeContent;
@@ -25,9 +50,11 @@ export default function HomePage() {
             {c.welcome.heading}
           </h2>
           <span className="gold-rule-dark mb-8" />
-          <p className="text-lg md:text-xl text-navy-950/75 leading-relaxed">
-            {c.welcome.body}
-          </p>
+          <div className="text-lg md:text-xl text-navy-950/75 leading-relaxed space-y-5">
+            {c.welcome.body.map((p, i) => (
+              <p key={i}>{linkifyFrymanCanyonPark(p)}</p>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -46,6 +73,13 @@ export default function HomePage() {
               <p key={i}>{p}</p>
             ))}
           </div>
+          <Link
+            href="/history"
+            className="mt-8 inline-flex items-center gap-2 text-[12px] uppercase tracking-[0.2em] text-navy-950 hover:text-gold-600 transition-colors"
+          >
+            Discover the History of Fryman Estates
+            <span aria-hidden="true">&rarr;</span>
+          </Link>
         </div>
       </section>
 
@@ -74,7 +108,11 @@ export default function HomePage() {
             {c.heritage.title}
           </h2>
           <span className="gold-rule mb-8" />
-          <p className="text-lg text-ink-100 leading-relaxed mb-10">{c.heritage.body}</p>
+          <div className="text-lg text-ink-100 leading-relaxed mb-10 space-y-5">
+            {c.heritage.body.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
           <figure className="border-l-2 border-gold-500/60 pl-6">
             <p className="text-lg text-ink-100/90 italic leading-relaxed">
               {c.heritage.oakCaption}
