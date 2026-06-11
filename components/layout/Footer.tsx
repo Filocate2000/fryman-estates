@@ -1,6 +1,39 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
+// Footer link columns. Fryman has no sub-neighborhoods, so laurelwood's
+// Neighborhoods + History columns are collapsed into one History column. The
+// three History links point at /history for now (repoint when the Harry C.
+// Fryman / Fryman Ranch / Development History sub-pages are built).
+const FOOTER_LINKS: { heading: string; links: { label: string; href: string }[] }[] = [
+  {
+    heading: "History",
+    links: [
+      { label: "Harry C. Fryman", href: "/history" },
+      { label: "Fryman Ranch", href: "/history" },
+      { label: "Development History", href: "/history" },
+    ],
+  },
+  {
+    heading: "Homeowners",
+    links: [
+      { label: "Resources", href: "/homeowners" },
+      { label: "Emergency Contacts", href: "/homeowners/emergency-contacts" },
+      { label: "Neighborhood Watch", href: "/homeowners/neighborhood-watch" },
+    ],
+  },
+  {
+    heading: "The Firm",
+    links: [
+      { label: "About", href: "/about" },
+      { label: "What We Do", href: "/what-we-do" },
+      { label: "Buying", href: "/buying" },
+      { label: "Selling", href: "/selling" },
+      { label: "Contact", href: "/contact" },
+    ],
+  },
+];
+
 export function Footer() {
   const year = new Date().getFullYear();
   const calREs = siteConfig.agents
@@ -40,6 +73,27 @@ export function Footer() {
               Contact us
             </Link>
           </div>
+        </div>
+
+        {/* Site navigation link columns (Fryman: History collapsed; no sub-neighborhoods) */}
+        <div className="border-t border-white/5 py-12 grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-10">
+          {FOOTER_LINKS.map((col) => (
+            <div key={col.heading}>
+              <p className="eyebrow text-gold-500 mb-4">{col.heading}</p>
+              <ul className="space-y-2.5">
+                {col.links.map((l) => (
+                  <li key={`${col.heading}-${l.label}`}>
+                    <Link
+                      href={l.href}
+                      className="text-ink-100 text-sm hover:text-gold-500 transition-colors"
+                    >
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         {/* Oversized wordmark watermark (the MISRAJE firm brand, per misraje-site) */}

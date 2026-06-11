@@ -4,12 +4,12 @@ export function TestimonialsSection({ testimonials }: { testimonials: Testimonia
   if (testimonials.length === 0) return null;
 
   return (
-    <section className="bg-white py-20 md:py-28">
+    <section className="bg-navy-950 py-20 md:py-28">
       <div className="w-full px-6 md:px-12 lg:px-16">
         <div className="text-center mb-16">
-          <p className="eyebrow text-gold-600 mb-4">Client Experiences</p>
-          <h2 className="font-display font-light text-4xl md:text-5xl text-navy-950">
-            What our clients <span className="text-gold-600">say</span>
+          <p className="eyebrow text-gold-500 mb-4">Client Experiences</p>
+          <h2 className="font-display font-light text-4xl md:text-5xl text-white">
+            What our clients <span className="text-gold-500">say</span>
           </h2>
         </div>
 

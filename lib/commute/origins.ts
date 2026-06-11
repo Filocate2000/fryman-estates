@@ -111,11 +111,12 @@ export const ORIGINS: Record<string, OriginEntry> = {
     key: "studio-city",
     label: "Studio City",
     destinations: [
-      { key: "beverly-hills", label: "Beverly Hills" },
-      { key: "burbank", label: "Burbank" },
-      { key: "sherman-oaks", label: "Sherman Oaks" },
+      { key: "downtown-la", label: "Downtown LA" },
+      { key: "hollywood", label: "Hollywood" },
+      { key: "woodland-hills", label: "Woodland Hills" },
       { key: "pasadena", label: "Pasadena" },
-      { key: "west-hollywood", label: "West Hollywood" },
+      { key: "santa-monica", label: "Santa Monica" },
+      { key: "beverly-hills", label: "Beverly Hills" },
     ],
   },
   "san-fernando": {

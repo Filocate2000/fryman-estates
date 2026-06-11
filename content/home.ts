@@ -1,6 +1,6 @@
 // content/home.ts
-// Render-ready copy for the home page (kept out of the components per the
-// architecture rule). NO em dashes.
+// Render-ready copy for the Fryman Estates home page (kept out of components per
+// the architecture rule). NO em dashes.
 
 export type Testimonial = {
   id: string;
@@ -15,16 +15,40 @@ export const homeContent = {
   hero: {
     wordmark: "Fryman Estates",
     tagline: "Studio City",
-    italicLine: "Country living, city convenience.",
+    italicLine: "Canyon living, minutes from the city.",
   },
 
-  intro: {
-    eyebrow: "Welcome",
-    heading: "One of Studio City's most cherished neighborhoods.",
+  welcome: {
+    eyebrow: "Why Location Matters in Fryman Estates, Studio City",
+    heading: "Welcome to Fryman Estates in Studio City",
+    body: "Fryman Estates sits in the Studio City hills, a few minutes from Beverly Hills, Hollywood, and the Sunset Strip. The streets are quiet and the lots are large, with gated drives and estate-scale properties set back from the road. Fryman Canyon Park is close enough to reach on foot, so its trails are part of daily life here. Tucked behind Mulholland Drive among mature trees and canyon terrain, the neighborhood keeps its distance from the city while staying a short drive from it.",
+  },
+
+  history: {
+    heading: "A Hillside Neighborhood Shaped by Its History",
     body: [
-      "Fryman Estates sits in the hills of Studio City, above the San Fernando Valley. More about the neighborhood is on the way.",
-      "This site is the work of Misraje Real Estate Partners, a mother-and-son team who live and work in Studio City.",
+      "Fryman Estates runs along Mulholland Drive, wrapped by the open space of Fryman Canyon. Its story reaches back close to a century, and the neighborhood still carries that history in its streets, its trees, and its homes.",
+      "Much of what defines the area is the result of deliberate choices: careful planning, a long record of preservation, and a preference for custom-built homes that work with the hillside rather than against it. Towering oaks shade the winding streets, and the canyon around them has been kept largely intact.",
+      "The homes range from Mid-Century Modern to Contemporary, with privacy and a connection to the landscape common to nearly all of them. It is a hillside neighborhood that has held onto its character as the rest of Los Angeles grew around it.",
     ],
+  },
+
+  boundary: {
+    heading: "Explore the Fryman Estates Boundaries",
+    body: "Fryman Estates occupies a defined pocket of hillside in Studio City, bordered by canyon terrain and a handful of winding access roads. The shape of the neighborhood follows the land and a long effort to keep it intact, private while staying close to the rest of Studio City and Los Angeles.",
+  },
+
+  architecture: {
+    eyebrow: "Architecture",
+    heading: "Architectural Highlights: Evolving Homes Rooted in Ranch Design",
+    body: "Many Fryman Estates homes began as ranch-style residences laid out to follow the contours of the hillside. Over the years they have been expanded and rebuilt into a range of styles, from Mid-Century Modern to Traditional to Contemporary, while keeping a consistent feel across the neighborhood. Large lots, mature oak trees, and layouts shaped by the terrain carry through the variety, so the homes read as distinct without feeling unrelated.",
+  },
+
+  heritage: {
+    eyebrow: "Heritage",
+    title: "Where Heritage Lives Beneath the Trees",
+    body: "Tree-lined streets and mature landscaping run through Fryman Estates, with many homes set behind gates and framed by native growth. Oak and sycamore trees, some of them centuries old, form a canopy that gives the neighborhood much of its character.",
+    oakCaption: "One oak here is thought to be around 400 years old. It stood on a property whose former owners included Mickey Rooney and Drew Barrymore, and one of its branches once held a swing that Judy Garland and other guests were known to use.",
   },
 
   why: {
@@ -33,35 +57,39 @@ export const homeContent = {
     points: [
       {
         title: "Unmatched local expertise",
-        body: "Karen and Jack know Studio City's homes, its streets, and often its owners. No one knows this area better.",
+        body: "Karen and Jack have been part of this area since the 1970s, with decades of firsthand knowledge of Fryman Estates and Studio City: its topography, its architecture, and how the neighborhood came to be.",
       },
       {
-        title: "Local residents",
-        body: "We do not just sell here, we live here. That daily, on-the-ground familiarity informs every recommendation and every negotiation.",
+        title: "A neighbor's read on the market",
+        body: "That long familiarity shapes every recommendation and negotiation, from how a hillside lot lives to what a given street commands.",
       },
       {
-        title: "Quiet, off-market listings",
-        body: "Through cultivated relationships and an exclusive coming-soon database, we offer access to private, off-market opportunities that never appear on the MLS.",
+        title: "Quiet, off-market access",
+        body: "Through long-standing relationships with owners and local agents, we often hear about homes before they reach the MLS, which matters in a small neighborhood where privacy is the norm.",
       },
     ] as WhyPoint[],
   },
 
   testimonials: [
     {
-      id: "vega",
-      clientName: "Charleen & Rafael Vega",
-      property: "Casa Vega",
-      body: "Karen and Jack's background in the real estate industry made the sale of our home a stress-free experience. They designed a home selling business plan that was beyond successful. Their talent in marketing our home was a streamlined presentation that attracted many prospective buyers.",
+      id: "sprecher",
+      clientName: "Jill Sprecher",
+      property: "Seller · Iredell Street",
+      body: "I had several in-depth conversations with Karen and Jack about how best to bring my home to market. After weighing a few strategies, I followed their recommendation to price just below market value for the conditions at the time, and it worked exactly as they predicted. We received eight offers, and they walked me through the pros and cons of each. Their calm, confident handling of the negotiations gave me peace of mind, and the home sold for significantly more than the asking price.",
     },
     {
-      id: "doryon",
-      clientName: "Jeremiah & Christine Doryon",
-      property: null,
-      body: "Jack and Karen are pros. They guided us through everything, staging, pricing, negotiations, and their advice really paid off. Our old home got multiple offers and sold for way more than we expected. The whole escrow process was seamless.",
+      id: "hyndman",
+      clientName: "Leanna Hyndman",
+      property: "Buyer · Oakdell Road",
+      body: "Working with Karen and Jack made a real difference during a tough negotiation. They were clear, communicative, and patient, explained the process thoroughly, and kept me informed at every step. Their negotiating was calm and strategic and always focused on my best interest, even during contentious moments. I felt fully supported throughout and could not have asked for a better team to guide me through the purchase of my home on Oakdell Road.",
+    },
+    {
+      id: "vega",
+      clientName: "Charleen & Rafael Vega",
+      property: "Casa Vega · Fryman Road",
+      body: "We purchased our home with Karen and Jack and later returned to them to handle the sale. Their background in the industry made the process stress-free, and their marketing was a streamlined presentation that drew many prospective buyers. They generated a strong offer shortly after the home came to market and negotiated terms that served our particular needs. Best of all, the home sold at the full asking price. This is our sixth transaction with them.",
     },
   ] as Testimonial[],
 
-  // YOUTUBE: no video link for this build. When a link is supplied, set `video`
-  // to { id, title, subject } and the home page can render a lazy embed.
   video: null as { id: string; title: string; subject: string } | null,
 };

@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/Hero";
 import { CommuteWidget } from "@/components/sections/CommuteWidget";
+import { FrymanBoundary } from "@/components/sections/FrymanBoundary";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 import { homeContent } from "@/content/home";
@@ -16,25 +17,75 @@ export default function HomePage() {
     <>
       <Hero />
 
-      {/* Intro band (navy) */}
-      <section className="bg-navy-950 py-20 md:py-28">
-        <div className="editorial max-w-4xl">
-          <p className="eyebrow text-gold-500 mb-4">{c.intro.eyebrow}</p>
-          <h2 className="font-display font-light text-display text-white mb-6 leading-tight">
-            {c.intro.heading}
+      {/* 1. Welcome (WHITE) */}
+      <section className="bg-white py-20 md:py-28">
+        <div className="w-full px-6 md:px-16">
+          <p className="eyebrow text-gold-600 mb-4">{c.welcome.eyebrow}</p>
+          <h2 className="font-display font-light text-3xl md:text-4xl lg:text-5xl text-navy-950 mb-6 leading-tight">
+            {c.welcome.heading}
           </h2>
-          <span className="gold-rule mb-8" />
-          <div className="space-y-5 text-lg text-ink-100 leading-relaxed">
-            {c.intro.body.map((p, i) => (
+          <span className="gold-rule-dark mb-8" />
+          <p className="text-lg md:text-xl text-navy-950/75 leading-relaxed max-w-4xl">
+            {c.welcome.body}
+          </p>
+        </div>
+      </section>
+
+      {/* 2. Commute widget (NAVY) */}
+      <CommuteWidget />
+
+      {/* 3. History narrative (WHITE) */}
+      <section className="bg-white py-20 md:py-28">
+        <div className="w-full px-6 md:px-16">
+          <h2 className="font-display font-light text-3xl md:text-4xl lg:text-5xl text-navy-950 mb-5">
+            {c.history.heading}
+          </h2>
+          <span className="gold-rule-dark mb-8" />
+          <div className="text-lg md:text-xl text-navy-950/75 leading-relaxed space-y-5 max-w-4xl">
+            {c.history.body.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Why Misraje (white) */}
+      {/* 4. Fryman boundary (NAVY) - single enclave, gradient placeholder */}
+      <FrymanBoundary />
+
+      {/* 5. Architectural highlights (WHITE) */}
       <section className="bg-white py-20 md:py-28">
-        <div className="editorial">
+        <div className="w-full px-6 md:px-16 max-w-4xl">
+          <p className="eyebrow text-gold-600 mb-4">{c.architecture.eyebrow}</p>
+          <h2 className="font-display font-light text-3xl md:text-4xl text-navy-950 mb-5">
+            {c.architecture.heading}
+          </h2>
+          <span className="gold-rule-dark mb-8" />
+          <p className="text-lg text-navy-950/75 leading-relaxed">
+            {c.architecture.body}
+          </p>
+        </div>
+      </section>
+
+      {/* 6. Heritage / the oaks (NAVY) */}
+      <section className="bg-navy-950 py-20 md:py-28">
+        <div className="w-full px-6 md:px-16 max-w-4xl">
+          <p className="eyebrow text-gold-500 mb-4">{c.heritage.eyebrow}</p>
+          <h2 className="font-display font-light text-3xl md:text-4xl text-white mb-5">
+            {c.heritage.title}
+          </h2>
+          <span className="gold-rule mb-8" />
+          <p className="text-lg text-ink-100 leading-relaxed mb-10">{c.heritage.body}</p>
+          <figure className="border-l-2 border-gold-500/60 pl-6">
+            <p className="text-lg text-ink-100/90 italic leading-relaxed">
+              {c.heritage.oakCaption}
+            </p>
+          </figure>
+        </div>
+      </section>
+
+      {/* 7. Why Misraje (WHITE) */}
+      <section className="bg-white py-20 md:py-28">
+        <div className="w-full px-6 md:px-16">
           <div className="mb-16 max-w-4xl">
             <p className="eyebrow text-gold-600 mb-4">{c.why.eyebrow}</p>
             <h2 className="font-display font-light text-3xl md:text-4xl lg:text-5xl text-navy-950 leading-[1.1]">
@@ -61,13 +112,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Commute times (navy) */}
-      <CommuteWidget />
-
-      {/* Testimonials (white) */}
+      {/* 8. Testimonials */}
       <TestimonialsSection testimonials={c.testimonials} />
 
-      {/* Contact CTA (white) */}
+      {/* 9. Contact CTA */}
       <ContactCTA />
     </>
   );
