@@ -379,7 +379,7 @@ export function CommuteWidget() {
 
   return (
     <section className="bg-navy-950 text-white py-20 md:py-28">
-      <div className="editorial">
+      <div className="w-full px-6 md:px-16">
         <p className="eyebrow text-gold-500 mb-4">Explore Los Angeles</p>
         <h2 className="font-display font-light text-display mb-6">
           Find the neighborhood <span className="italic">that fits your life</span>

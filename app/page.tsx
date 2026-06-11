@@ -25,7 +25,7 @@ export default function HomePage() {
             {c.welcome.heading}
           </h2>
           <span className="gold-rule-dark mb-8" />
-          <p className="text-lg md:text-xl text-navy-950/75 leading-relaxed max-w-4xl">
+          <p className="text-lg md:text-xl text-navy-950/75 leading-relaxed">
             {c.welcome.body}
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function HomePage() {
             {c.history.heading}
           </h2>
           <span className="gold-rule-dark mb-8" />
-          <div className="text-lg md:text-xl text-navy-950/75 leading-relaxed space-y-5 max-w-4xl">
+          <div className="text-lg md:text-xl text-navy-950/75 leading-relaxed space-y-5">
             {c.history.body.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
@@ -54,7 +54,7 @@ export default function HomePage() {
 
       {/* 5. Architectural highlights (WHITE) */}
       <section className="bg-white py-20 md:py-28">
-        <div className="w-full px-6 md:px-16 max-w-4xl">
+        <div className="w-full px-6 md:px-16">
           <p className="eyebrow text-gold-600 mb-4">{c.architecture.eyebrow}</p>
           <h2 className="font-display font-light text-3xl md:text-4xl text-navy-950 mb-5">
             {c.architecture.heading}
@@ -68,7 +68,7 @@ export default function HomePage() {
 
       {/* 6. Heritage / the oaks (NAVY) */}
       <section className="bg-navy-950 py-20 md:py-28">
-        <div className="w-full px-6 md:px-16 max-w-4xl">
+        <div className="w-full px-6 md:px-16">
           <p className="eyebrow text-gold-500 mb-4">{c.heritage.eyebrow}</p>
           <h2 className="font-display font-light text-3xl md:text-4xl text-white mb-5">
             {c.heritage.title}

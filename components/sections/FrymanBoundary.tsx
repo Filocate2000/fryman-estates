@@ -124,7 +124,7 @@ export function FrymanBoundary() {
           {b.heading}
         </h2>
         <span className="gold-rule mb-10" />
-        <p className="text-lg text-ink-100 leading-relaxed mb-10 max-w-4xl">{b.body}</p>
+        <p className="text-lg text-ink-100 leading-relaxed mb-10">{b.body}</p>
         <div
           className="overflow-hidden border-2 border-gold-500/70"
           style={{ boxShadow: "0 12px 32px rgba(0,0,0,0.35)" }}
