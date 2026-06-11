@@ -113,7 +113,6 @@ export const ORIGINS: Record<string, OriginEntry> = {
     destinations: [
       { key: "downtown-la", label: "Downtown LA" },
       { key: "hollywood", label: "Hollywood" },
-      { key: "woodland-hills", label: "Woodland Hills" },
       { key: "pasadena", label: "Pasadena" },
       { key: "santa-monica", label: "Santa Monica" },
       { key: "beverly-hills", label: "Beverly Hills" },
