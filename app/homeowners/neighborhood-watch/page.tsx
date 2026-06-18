@@ -6,7 +6,7 @@ import { loadDoc } from "@/lib/content";
 import { absoluteUrl } from "@/lib/site-config";
 
 const DESCRIPTION =
-  "The Fryman Estates neighborhood watch: safety guidelines, the LAPD senior lead officer, and how to report suspicious activity.";
+  "The Fryman Canyon Estates neighborhood watch: safety guidelines, the LAPD senior lead officer, and how to report suspicious activity.";
 
 export const metadata: Metadata = {
   title: "Neighborhood Watch",

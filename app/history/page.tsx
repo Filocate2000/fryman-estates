@@ -4,7 +4,7 @@ import { ContactCTA } from "@/components/sections/ContactCTA";
 import { siteConfig, absoluteUrl } from "@/lib/site-config";
 
 const DESCRIPTION =
-  "The history of Fryman Estates in Studio City. This page is in progress.";
+  "The history of Fryman Canyon Estates in Studio City. This page is in progress.";
 
 export const metadata: Metadata = {
   title: "History",
@@ -33,7 +33,7 @@ export default function HistoryPage() {
       <PageHero
         eyebrow={siteConfig.name}
         title="History"
-        subtitle="The story of the Fryman Estates neighborhood."
+        subtitle="The story of the Fryman Canyon Estates neighborhood."
       />
       <section className="bg-white py-20 md:py-28">
         <div className="editorial">
