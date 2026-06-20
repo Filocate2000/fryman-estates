@@ -6,13 +6,13 @@ import { loadDoc } from "@/lib/content";
 import { absoluteUrl } from "@/lib/site-config";
 
 const DESCRIPTION =
-  "Selling in Fryman Estates: how Misraje Real Estate Partners positions and markets homes in this Studio City neighborhood for the strongest possible result.";
+  "Selling in Fryman Canyon Estates: how Misraje Real Estate Partners positions and markets homes in this Studio City neighborhood for the strongest possible result.";
 
 export const metadata: Metadata = {
-  title: "Selling in Fryman Estates",
+  title: "Selling in Fryman Canyon Estates",
   description: DESCRIPTION,
   alternates: { canonical: absoluteUrl("/selling") },
-  openGraph: { title: "Selling in Fryman Estates", description: DESCRIPTION, url: absoluteUrl("/selling") },
+  openGraph: { title: "Selling in Fryman Canyon Estates", description: DESCRIPTION, url: absoluteUrl("/selling") },
 };
 
 export default function SellingPage() {
@@ -20,8 +20,8 @@ export default function SellingPage() {
   return (
     <>
       <PageHero
-        eyebrow="Experience Fryman Estates"
-        title="Selling in Fryman Estates"
+        eyebrow="Experience Fryman Canyon Estates"
+        title="Selling in Fryman Canyon Estates"
         subtitle="A strategy built around the neighborhood's specific buyers."
       />
       <section className="bg-white py-20 md:py-28">

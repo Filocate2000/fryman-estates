@@ -13,10 +13,31 @@ import { siteConfig } from "@/lib/site-config";
 // COMING LATER (do not render until the hub-side recon + registration lands):
 //   { label: "Blog", href: "/blog" },
 //   { label: "LARE Report", href: "/lare-report" },
-const NAV_ITEMS: { label: string; href: string }[] = [
+type NavItem = {
+  label: string;
+  href: string;
+  children?: { label: string; href: string }[];
+};
+
+const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "History", href: "/history" },
-  { label: "Homeowners", href: "/homeowners" },
+  {
+    label: "Historical Information",
+    href: "/history",
+    children: [
+      { label: "Harry C Fryman", href: "/history/harry-c-fryman" },
+      { label: "Development History", href: "/history/development-history" },
+      { label: "Fryman Ranch", href: "/history/fryman-ranch" },
+    ],
+  },
+  {
+    label: "Homeowners",
+    href: "/homeowners",
+    children: [
+      { label: "Looking to Purchase in Fryman Estates", href: "/buying" },
+      { label: "Join Confidential Sellers List", href: "/seller-list" },
+    ],
+  },
   { label: "About", href: "/about" },
   { label: "What We Do", href: "/what-we-do" },
   { label: "Contact", href: "/contact" },
@@ -225,6 +246,41 @@ export function Navigation() {
                         )}
                       />
                     </Link>
+
+                    {item.children && (
+                      <ul className="ml-[34px] mb-1 border-l border-white/10">
+                        {item.children.map((child) => {
+                          const childActive = pathname === child.href;
+                          return (
+                            <li key={child.href}>
+                              <Link
+                                href={child.href}
+                                className="group flex items-center gap-3 py-1.5 pl-4 transition-colors"
+                              >
+                                <span
+                                  className={cn(
+                                    "text-[12.5px] tracking-[0.01em] transition-colors whitespace-nowrap",
+                                    childActive
+                                      ? "text-gold-500"
+                                      : "text-white/60 group-hover:text-white"
+                                  )}
+                                >
+                                  {child.label}
+                                </span>
+                                <span
+                                  className={cn(
+                                    "flex-1 h-px transition-all duration-500",
+                                    childActive
+                                      ? "bg-gold-500/60"
+                                      : "bg-transparent group-hover:bg-white/10"
+                                  )}
+                                />
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
                   </li>
                 );
               })}

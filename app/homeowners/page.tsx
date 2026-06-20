@@ -5,7 +5,7 @@ import { ContactCTA } from "@/components/sections/ContactCTA";
 import { absoluteUrl } from "@/lib/site-config";
 
 const DESCRIPTION =
-  "Resources for Fryman Estates homeowners: the neighborhood watch, community news, and a full list of emergency and local contacts.";
+  "Resources for Fryman Canyon Estates homeowners: the neighborhood watch, community news, and a full list of emergency and local contacts.";
 
 export const metadata: Metadata = {
   title: "Homeowners",
@@ -38,7 +38,7 @@ export default function HomeownersPage() {
       <PageHero
         eyebrow="For Residents"
         title="Homeowners"
-        subtitle="Practical resources for the people who live in Fryman Estates."
+        subtitle="Practical resources for the people who live in Fryman Canyon Estates."
       />
       <section className="bg-white py-20 md:py-28">
         <div className="editorial">

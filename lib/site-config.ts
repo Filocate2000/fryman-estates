@@ -93,13 +93,13 @@ export type SiteConfig = {
 
 export const siteConfig: SiteConfig = {
   siteKey: "fryman",
-  name: "Fryman Estates",
+  name: "Fryman Canyon Estates",
   tagline: "Studio City",
   legalName: "Misraje Real Estate Partners",
   domain: "frymanestates.com",
   url: "https://www.frymanestates.com",
   description:
-    "Fryman Estates, the hyperlocal guide to the Fryman Canyon neighborhood of Studio City, presented by Misraje Real Estate Partners.",
+    "Fryman Canyon Estates, the hyperlocal guide to the Fryman Canyon neighborhood of Studio City, presented by Misraje Real Estate Partners.",
 
   // Fryman Estates sits in the Studio City hills. No dedicated Fryman origin
   // exists hub-side yet, so the commute widget uses the nearest curated origin,

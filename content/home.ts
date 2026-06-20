@@ -14,7 +14,7 @@ export type WhyPoint = { title: string; body: string };
 
 export const homeContent = {
   hero: {
-    wordmark: "Fryman Estates",
+    wordmark: "Fryman Canyon Estates",
     tagline: "Studio City",
     italicLine: "Canyon living, minutes from the city.",
   },

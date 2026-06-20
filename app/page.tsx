@@ -8,7 +8,7 @@ import { homeContent } from "@/content/home";
 
 export const metadata = {
   description:
-    "Fryman Estates: the hyperlocal guide to the Fryman Canyon neighborhood of Studio City, presented by Misraje Real Estate Partners.",
+    "Fryman Canyon Estates: the hyperlocal guide to the Fryman Canyon neighborhood of Studio City, presented by Misraje Real Estate Partners.",
 };
 
 const FRYMAN_CANYON_PARK_URL =
@@ -77,7 +77,7 @@ export default function HomePage() {
             href="/history"
             className="mt-8 inline-flex items-center gap-2 text-[12px] uppercase tracking-[0.2em] text-navy-950 hover:text-gold-600 transition-colors"
           >
-            Discover the History of Fryman Estates
+            Discover the History of Fryman Canyon Estates
             <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>

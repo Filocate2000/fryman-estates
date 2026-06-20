@@ -2,16 +2,14 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
 // Footer link columns. Fryman has no sub-neighborhoods, so laurelwood's
-// Neighborhoods + History columns are collapsed into one History column. The
-// three History links point at /history for now (repoint when the Harry C.
-// Fryman / Fryman Ranch / Development History sub-pages are built).
+// Neighborhoods + History columns are collapsed into one History column.
 const FOOTER_LINKS: { heading: string; links: { label: string; href: string }[] }[] = [
   {
     heading: "History",
     links: [
-      { label: "Harry C. Fryman", href: "/history" },
-      { label: "Fryman Ranch", href: "/history" },
-      { label: "Development History", href: "/history" },
+      { label: "Harry C. Fryman", href: "/history/harry-c-fryman" },
+      { label: "Fryman Ranch", href: "/history/fryman-ranch" },
+      { label: "Development History", href: "/history/development-history" },
     ],
   },
   {
@@ -20,6 +18,8 @@ const FOOTER_LINKS: { heading: string; links: { label: string; href: string }[] 
       { label: "Resources", href: "/homeowners" },
       { label: "Emergency Contacts", href: "/homeowners/emergency-contacts" },
       { label: "Neighborhood Watch", href: "/homeowners/neighborhood-watch" },
+      { label: "Looking to Purchase in Fryman Estates", href: "/buying" },
+      { label: "Join Confidential Sellers List", href: "/seller-list" },
     ],
   },
   {

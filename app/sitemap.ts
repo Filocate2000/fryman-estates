@@ -6,6 +6,9 @@ import { absoluteUrl } from "@/lib/site-config";
 const ROUTES = [
   "/",
   "/history",
+  "/history/harry-c-fryman",
+  "/history/development-history",
+  "/history/fryman-ranch",
   "/homeowners",
   "/homeowners/neighborhood-watch",
   "/homeowners/community-news",
@@ -14,6 +17,7 @@ const ROUTES = [
   "/what-we-do",
   "/buying",
   "/selling",
+  "/seller-list",
   "/contact",
   "/accessibility",
   "/privacy",

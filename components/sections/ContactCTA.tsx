@@ -21,7 +21,7 @@ export function ContactCTA({
         >
           Considering buying or selling
           <br />
-          <span className={navy ? "text-gold-500" : "text-gold-600"}>in Fryman Estates?</span>
+          <span className={navy ? "text-gold-500" : "text-gold-600"}>in Fryman Canyon Estates?</span>
         </h2>
         <span className={`${navy ? "gold-rule" : "gold-rule-dark"} mx-auto mb-10`} />
         <p

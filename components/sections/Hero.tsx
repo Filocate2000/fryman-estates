@@ -1,9 +1,7 @@
 import Image from "next/image";
 import { homeContent } from "@/content/home";
-import { bestWideHero } from "@/lib/photos";
 
 export function Hero() {
-  const photo = bestWideHero();
   const h = homeContent.hero;
 
   return (
@@ -11,25 +9,14 @@ export function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{ width: "100vw", marginLeft: "calc(50% - 50vw)" }}
     >
-      {photo ? (
-        <Image
-          src={photo.src}
-          alt={photo.alt}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-      ) : (
-        <div
-          aria-hidden="true"
-          className="absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(ellipse 95% 85% at 50% 30%, #1a3a66 0%, #0F2547 45%, #07172e 100%)",
-          }}
-        />
-      )}
+      <Image
+        src="/hero.jpg"
+        alt={h.wordmark}
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center"
+      />
 
       <div className="absolute inset-0 bg-navy-950/45" />
       <div
@@ -42,11 +29,12 @@ export function Hero() {
 
       <div className="relative w-full text-center px-6 animate-fade-in max-w-6xl mx-auto">
         <h1
-          className="font-serif font-light text-white animate-fade-up"
+          className="font-display font-light text-white animate-fade-up uppercase"
           style={{
-            fontSize: "clamp(2.75rem, 9vw, 8.5rem)",
-            letterSpacing: "0.02em",
+            fontSize: "clamp(1.25rem, 5vw, 4.5rem)",
+            letterSpacing: "0.08em",
             lineHeight: "1.02",
+            whiteSpace: "nowrap",
             textShadow: "0 4px 40px rgba(0,0,0,0.9), 0 2px 8px rgba(0,0,0,0.7)",
           }}
         >
