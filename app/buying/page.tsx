@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHero } from "@/components/layout/PageHero";
 import { ContactCTA } from "@/components/sections/ContactCTA";
+import { BuyerListForm } from "@/components/sections/BuyerListForm";
 import { buyingContent as c } from "@/content/buying";
 import { absoluteUrl } from "@/lib/site-config";
 
@@ -24,6 +25,11 @@ const pic = (file: string) => encodeURI(DIR + file);
 // Cream plate matching FloatFigure / the history-page galleries.
 const FRAME =
   "bg-[#f6f3ec] border border-gold-500/50 p-3 shadow-[0_8px_24px_rgba(0,0,0,0.22)]";
+
+// Closing copy for the buyer inquiry form, in the buyer voice (parallel to the
+// seller-list page's closing). No em dashes per the content style guide.
+const BUYER_CLOSING =
+  "Whether you're actively searching or simply want to know when the right home comes up, joining our Buyer List puts you first in line for Fryman Estates homes, including quiet, off-market opportunities before they reach the MLS. We've lived and worked in this community since the 1970s, and no one understands Fryman Estates better than we do.";
 
 export default function BuyingPage() {
   return (
@@ -174,6 +180,26 @@ export default function BuyingPage() {
                 <p className="text-ink-100 text-sm leading-relaxed">{p.body}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Buyer inquiry form (NAVY) — mirrors the seller-list form so the two
+          pages feel like a matched set. */}
+      <section className="bg-navy-950 py-20 md:py-28">
+        <div className="w-full px-6 md:px-16">
+          <div className="w-full">
+            <p className="eyebrow text-gold-500 mb-4">Confidential Buyer Profile</p>
+            <h2 className="font-display font-light text-3xl md:text-4xl text-white mb-6">
+              Join the Fryman Estates Buyer List
+            </h2>
+            <span className="gold-rule mb-8" />
+            <p className="text-ink-200 leading-relaxed max-w-3xl mb-10">
+              Tell us what you&rsquo;re looking for and we&rsquo;ll reach out when a match comes up,
+              including quiet, off-market homes before they reach the MLS.
+            </p>
+
+            <BuyerListForm closing={BUYER_CLOSING} />
           </div>
         </div>
       </section>

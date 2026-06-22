@@ -8,6 +8,9 @@ import { absoluteUrl } from "@/lib/site-config";
 // the file segment (the folder is clean kebab-case). Matches the history pages.
 const DIR = "/images/looking-to-buy/";
 const pic = (file: string) => encodeURI(DIR + file);
+// Second image folder (note the spaces + capitals); encodeURI handles them.
+const FCE_DIR = "/images/Fryman Canyon Estates/";
+const fce = (file: string) => encodeURI(FCE_DIR + file);
 const FRAME =
   "bg-[#f6f3ec] border border-gold-500/50 p-3 shadow-[0_8px_24px_rgba(0,0,0,0.22)]";
 
@@ -55,8 +58,8 @@ export default function SellerListPage() {
   return (
     <>
       <PageHero
-        image={pic("Front Gate.jpg")}
-        alt="Private gated entrance to a Fryman Canyon Estates home"
+        image={pic("25.jpg")}
+        alt="Swimming pool with lounge chairs at a Fryman Canyon Estates home"
         title="Join the Fryman Estates Seller List"
         subtitle="Discreet. Informed. Connected."
         scrim="dark"
@@ -70,24 +73,28 @@ export default function SellerListPage() {
             <p>{INTRO_2}</p>
           </div>
 
-          <div className="mt-14">
-            <p className="eyebrow text-gold-600 mb-4">Why Join the Seller List</p>
-            <span className="gold-rule-dark mb-6" />
-            <ul className="space-y-2 text-navy-950/75 leading-relaxed list-disc pl-6">
-              {WHY_JOIN.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
+          <div className="mt-14 grid lg:grid-cols-2 gap-12 lg:gap-16">
+            {/* LEFT: Why join */}
+            <div>
+              <p className="eyebrow text-gold-600 mb-4">Why Join the Seller List</p>
+              <span className="gold-rule-dark mb-6" />
+              <ul className="space-y-2 text-navy-950/75 leading-relaxed list-disc pl-6">
+                {WHY_JOIN.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
 
-          <div className="mt-14">
-            <p className="eyebrow text-gold-600 mb-4">What We Provide</p>
-            <span className="gold-rule-dark mb-6" />
-            <ul className="space-y-2 text-navy-950/75 leading-relaxed list-disc pl-6">
-              {WHAT_WE_PROVIDE.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+            {/* RIGHT: What we provide */}
+            <div>
+              <p className="eyebrow text-gold-600 mb-4">What We Provide</p>
+              <span className="gold-rule-dark mb-6" />
+              <ul className="space-y-2 text-navy-950/75 leading-relaxed list-disc pl-6">
+                {WHAT_WE_PROVIDE.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -95,18 +102,76 @@ export default function SellerListPage() {
       {/* Form (navy band) */}
       <section className="bg-navy-950 py-20 md:py-28">
         <div className="w-full px-6 md:px-16">
-          <div className="mx-auto max-w-2xl">
-            {/* Framed image to warm the navy band (single-column layout kept). */}
+          <div className="w-full">
+            {/* Compact editorial 5-image mosaic (height-capped) above the
+                two-column form. Lead spans 2x2; four supporting fill a tidy
+                grid. No captions. Source: public/images/Fryman Canyon Estates/. */}
             <figure className="mb-12">
-              <div className={FRAME}>
-                <div className="relative aspect-[16/9] w-full overflow-hidden">
-                  <Image
-                    src={pic("Backyard Landscape.jpg")}
-                    alt="Private backyard and canyon landscaping at a Fryman Canyon Estates home"
-                    fill
-                    sizes="(min-width: 768px) 42rem, 100vw"
-                    className="object-cover"
-                  />
+              <div className="grid grid-cols-2 grid-rows-4 gap-2 h-[360px] md:grid-cols-4 md:grid-rows-2 md:gap-3 md:h-[400px]">
+                {/* LEAD (2x2, largest) */}
+                <div className={`${FRAME} col-span-2 row-span-2 h-full`}>
+                  <div className="relative h-full w-full overflow-hidden">
+                    <Image
+                      src={fce("4.jpg")}
+                      alt="Exterior and porte-cochere of a Fryman Canyon Estates home"
+                      fill
+                      priority
+                      sizes="(min-width: 768px) 45vw, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                {/* Supporting: pool */}
+                <div className={`${FRAME} h-full`}>
+                  <div className="relative h-full w-full overflow-hidden">
+                    <Image
+                      src={fce("47.jpg")}
+                      alt="Swimming pool and stone patio at a Fryman Canyon Estates home"
+                      fill
+                      loading="lazy"
+                      sizes="(min-width: 768px) 22vw, 50vw"
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                {/* Supporting: living room */}
+                <div className={`${FRAME} h-full`}>
+                  <div className="relative h-full w-full overflow-hidden">
+                    <Image
+                      src={fce("12141_Iredell_Ave_5-1636149737.jpg")}
+                      alt="Living room interior of a Fryman Canyon Estates home"
+                      fill
+                      loading="lazy"
+                      sizes="(min-width: 768px) 22vw, 50vw"
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                {/* Supporting: backyard lawn */}
+                <div className={`${FRAME} h-full`}>
+                  <div className="relative h-full w-full overflow-hidden">
+                    <Image
+                      src={fce("3280_Fryman_Rd_007-1542056840.jpg")}
+                      alt="Backyard lawn and mature tree at a Fryman Canyon Estates home"
+                      fill
+                      loading="lazy"
+                      sizes="(min-width: 768px) 22vw, 50vw"
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                {/* Supporting: covered lounge detail */}
+                <div className={`${FRAME} h-full`}>
+                  <div className="relative h-full w-full overflow-hidden">
+                    <Image
+                      src={fce("3280_Fryman_Rd_037-1542057250.jpg")}
+                      alt="Covered outdoor lounge at a Fryman Canyon Estates home"
+                      fill
+                      loading="lazy"
+                      sizes="(min-width: 768px) 22vw, 50vw"
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </figure>

@@ -110,7 +110,10 @@ export function SellerListForm({ closing }: { closing: ReactNode }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-8">
+    <form onSubmit={handleSubmit}>
+      <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        {/* LEFT column — property details */}
+        <div className="space-y-8">
       {/* Property address */}
       <div>
         <label htmlFor="property_address" className={labelClass}>
@@ -224,6 +227,10 @@ export function SellerListForm({ closing }: { closing: ReactNode }) {
         </label>
         <textarea id="message" name="message" rows={4} className={inputClass} />
       </div>
+        </div>
+
+        {/* RIGHT column — contact + submit */}
+        <div className="space-y-8">
 
       {/* Contact details */}
       <div className="grid md:grid-cols-2 gap-6">
@@ -322,6 +329,8 @@ export function SellerListForm({ closing }: { closing: ReactNode }) {
       >
         {status === "submitting" ? "Submitting..." : "Submit"}
       </button>
+        </div>
+      </div>
     </form>
   );
 }

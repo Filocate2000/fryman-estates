@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
@@ -41,6 +42,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "About", href: "/about" },
   { label: "What We Do", href: "/what-we-do" },
   { label: "Contact", href: "/contact" },
+  { label: "Fryman Canyon Estates Market Report", href: "/market-report" },
 ];
 
 // Scroll threshold past which the nav adopts its "scrolled" state: solid navy
@@ -167,11 +169,28 @@ export function Navigation() {
             </button>
           </div>
 
-          {/* Agent contact cards (text-only; portraits not yet available for
-              this neighborhood site). */}
+          {/* Agent contact cards with headshots, mirroring laurelwood-site's
+              menu panel: portrait above name/phone/email. */}
           <div className="grid grid-cols-2 gap-4 mb-7">
             {siteConfig.agents.map((agent) => (
               <div key={agent.slug} className="flex flex-col items-center text-center">
+                <Link
+                  href={`/about#${agent.slug}`}
+                  className="group block overflow-hidden rounded-sm mb-3"
+                  aria-label={`View ${agent.firstName} ${agent.lastName} bio`}
+                >
+                  {agent.photo && (
+                    <Image
+                      src={agent.photo}
+                      alt={`${agent.firstName} ${agent.lastName}`}
+                      width={240}
+                      height={320}
+                      className="block w-[120px] h-[160px] object-cover transition-transform duration-500 group-hover:scale-105"
+                      style={{ objectPosition: "center 25%" }}
+                      priority
+                    />
+                  )}
+                </Link>
                 <Link
                   href={`/about#${agent.slug}`}
                   className="block text-white text-[13px] font-medium hover:text-gold-500 transition-colors mb-1.5"
