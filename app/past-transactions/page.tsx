@@ -19,6 +19,9 @@ export default function PastTransactionsPage() {
   return (
     <>
       <PageHero
+        image="/images/fryman/past-transactions.jpg"
+        alt="A pool and flagstone patio framed by mature greenery in Fryman Estates, Studio City."
+        scrim="dark"
         eyebrow="Track Record"
         title="Past Transactions"
         subtitle="A record of recent work in and around Fryman."
