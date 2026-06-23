@@ -9,11 +9,11 @@
 
 ### Years of Wisdom, Unparalleled Expertise
 
-With a career spanning over three decades, Karen stands as a cornerstone of the Los Angeles real estate market. Her deep understanding of market cycles and client-centered approach have earned her a reputation as one of the most trusted names in the industry. Navigating both booming markets and economic challenges, Karen has consistently achieved outstanding results for her clients in buyer's and seller's markets alike.
+With a career spanning over three decades, Karen stands as a cornerstone of the Los Angeles real estate market and a familiar, trusted presence to owners along the Fryman canyon streets. Decades of navigating market cycles, in boom times and downturns alike, have made her one of the steadiest advisors in the business, and her client-first approach is why sellers and buyers in Studio City return to her.
 
 ### Exceptional Market Knowledge Across Los Angeles
 
-Karen's insight into the Los Angeles market is unmatched. She has a unique understanding of neighborhoods throughout the area, from the coastal allure of Malibu to the vibrant pulse of Downtown LA. Her expertise in the distinct cultures and rhythms of each community makes her an invaluable resource, guiding clients through the nuances of locations like Beverly Hills, West Hollywood, and Studio City.
+Karen's command of the Los Angeles market spans the city, from the Malibu coastline to the heart of Downtown, but it sharpens in the Studio City foothills she works most closely. She understands how the canyon setting, the ridge outlooks, and the quiet of the Fryman streets translate into value, and how that value shifts from one block to the next. That fluency in a neighborhood's particulars is what makes her counsel worth more than a comparable report.
 
 ### Strategic and Adaptive Approach to Real Estate
 

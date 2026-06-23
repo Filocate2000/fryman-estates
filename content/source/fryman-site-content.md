@@ -312,10 +312,11 @@ CTAs on page: "Set Up a Quick Call" (/consultationfrymanestates), "Join Our Sell
   Lane, Fryman Road.
 - DUPLICATE-CONTENT WATCH: home-page history teaser references Laurelwood Estates. Keep
   distinct.
-- PAGES STILL NOT CAPTURED (lower priority; capture before content pass if wanted):
-  Who We Are (/misraje-partners), Karen bio (/karen-misraje), Jack bio (/jack-misraje),
-  What We Do (/what-we-do), Contact (/contact-us), and the homeowner subpages (Neighborhood
-  Watch, Community News, Emergency Contacts). Most of these are firm-level/shared and likely
-  already covered by the misraje/laurelwood repos' shared firm identity.
+- FIRM PAGES (now built on this site as dedicated routes): Who We Are (/who-we-are),
+  Meet the Partners with the Karen and Jack bios (/meet-the-partners, anchored at
+  /meet-the-partners#karen and /meet-the-partners#jack), Why Use Us (/why-use-us), and
+  Contact (/contact). Past Transactions (/past-transactions) ships as a shell pending data.
+  The homeowner subpages (Neighborhood Watch, Community News, Emergency Contacts) remain.
+  These are firm-level/shared, aligned with the misraje/laurelwood repos' shared firm identity.
 - FIRM CONTACT (consistent): Karen 310-488-1030 (CalRE# 00592639), Jack 323-209-5225 (CalRE#
   01015912), office 855-888-SOLD, 301 N Canon Dr Suite E, Beverly Hills, CA 90210.

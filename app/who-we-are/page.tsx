@@ -6,23 +6,23 @@ import { loadDoc } from "@/lib/content";
 import { absoluteUrl } from "@/lib/site-config";
 
 const DESCRIPTION =
-  "What Misraje Real Estate Partners does for buyers and sellers in Studio City: strategy, marketing, off-market access, and decades of proven results.";
+  "Misraje Real Estate Partners, the practice of Karen and Jack Misraje, representing buyers and sellers in Fryman Estates and Studio City. The #1 Two-Member Team in Coldwell Banker Global Luxury.";
 
 export const metadata: Metadata = {
-  title: "What We Do",
+  title: "Who We Are",
   description: DESCRIPTION,
-  alternates: { canonical: absoluteUrl("/what-we-do") },
-  openGraph: { title: "What We Do", description: DESCRIPTION, url: absoluteUrl("/what-we-do") },
+  alternates: { canonical: absoluteUrl("/who-we-are") },
+  openGraph: { title: "Who We Are", description: DESCRIPTION, url: absoluteUrl("/who-we-are") },
 };
 
-export default function WhatWeDoPage() {
-  const body = loadDoc("what-we-do");
+export default function WhoWeArePage() {
+  const body = loadDoc("who-we-are");
   return (
     <>
       <PageHero
-        eyebrow="Our Practice"
-        title="What We Do"
-        subtitle="Strategic solutions, exceptional outcomes."
+        eyebrow="The Firm"
+        title="Who We Are"
+        subtitle="A two-principal practice working the Fryman canyon streets of Studio City."
       />
       <section className="bg-white py-20 md:py-28">
         <div className="editorial">

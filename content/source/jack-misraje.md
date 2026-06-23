@@ -32,7 +32,7 @@ At the heart of Jack's practice is a commitment to protecting and growing his cl
 
 ### Extensive Local Market Knowledge Across Los Angeles
 
-Jack's expertise extends to the diverse neighborhoods of Los Angeles, from Malibu's iconic coastline to the estates of Beverly Hills and vibrant communities like Studio City, Sherman Oaks, and Toluca Lake. His thorough knowledge of these markets, combined with strategic marketing and cutting-edge technology, ensures a tailored, results-focused approach for each client.
+Jack's expertise spans the diverse neighborhoods of Los Angeles, from Malibu's coastline to the estates of Beverly Hills, but he knows the Studio City foothills around Fryman Canyon with particular depth. Pairing that close read of the Fryman market with strategic marketing and cutting-edge technology, he delivers a tailored, results-focused approach to every client buying or selling in these canyon streets.
 
 ### Choose Jack Misraje for Real Estate Success
 
