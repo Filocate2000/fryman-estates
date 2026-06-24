@@ -35,8 +35,9 @@ const NAV_ITEMS: NavItem[] = [
     label: "Homeowners",
     href: "/homeowners",
     children: [
-      { label: "Looking to Purchase in Fryman Estates", href: "/buying" },
-      { label: "Join Confidential Sellers List", href: "/seller-list" },
+      { label: "Looking to Buy", href: "/buying" },
+      { label: "Looking to Sell", href: "/selling" },
+      { label: "Join the Confidential Sellers List", href: "/seller-list" },
     ],
   },
   { label: "Who We Are", href: "/who-we-are" },
