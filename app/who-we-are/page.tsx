@@ -61,19 +61,28 @@ export default function WhoWeArePage() {
               </div>
             </div>
 
-            {/* How a listing is marketed — image beside text (image right, alternating) */}
+          </div>
+        </div>
+      </section>
+
+      {/* How a listing is marketed — NAVY band (alternating section color), matching the site's dark-band canon */}
+      <section className="bg-navy-950 py-20 md:py-28">
+        <div className="editorial">
+          <div className="max-w-4xl mx-auto">
+            {/* image beside text (image right, alternating) */}
             <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
               <div className="order-2 md:order-1">
-                <h2 className="font-serif text-3xl md:text-4xl font-normal text-navy-950 mb-8" style={{ letterSpacing: "-0.01em" }}>
+                <h2 className="font-display font-light text-3xl md:text-4xl text-white mb-6">
                   How a listing is marketed
                 </h2>
-                <div className="space-y-5 text-base text-stone-700 leading-relaxed">
+                <span className="gold-rule mb-8" />
+                <div className="space-y-5 text-base text-ink-100 leading-relaxed">
                   <p>
                     Every listing is built specifically for the property rather than run through a template. That means design and staging that present the home at its best, photography and videography matched to the home&rsquo;s character, targeted digital campaigns across the channels where qualified buyers actually look, and selective print placement in the publications that reach high-net-worth audiences. The goal is never volume of exposure for its own sake, but the right exposure to the right buyers.
                   </p>
                 </div>
               </div>
-              <div className="relative aspect-[4/5] overflow-hidden order-1 md:order-2 border-2 border-gold-500" style={{ borderRadius: "2px" }}>
+              <div className="relative aspect-[4/5] overflow-hidden order-1 md:order-2 border-2 border-gold-500/70" style={{ borderRadius: "2px", boxShadow: "0 12px 32px rgba(0,0,0,0.35)" }}>
                 <Image
                   src="/images/sections/who-we-are-interior.jpg"
                   alt="A staged living room interior represented by Misraje Real Estate Partners"
@@ -84,22 +93,22 @@ export default function WhoWeArePage() {
               </div>
             </div>
 
-            {/* The partnership */}
-            <div>
-              <h2 className="font-serif text-3xl md:text-4xl font-normal text-navy-950 mb-8" style={{ letterSpacing: "-0.01em" }}>
+            {/* Two principals — full-measure block stacked below, within the same navy band */}
+            <div className="mt-16 md:mt-20">
+              <h2 className="font-display font-light text-3xl md:text-4xl text-white mb-6">
                 Two principals
               </h2>
-              <div className="space-y-5 text-base text-stone-700 leading-relaxed">
+              <span className="gold-rule mb-8" />
+              <div className="space-y-5 text-base text-ink-100 leading-relaxed">
                 <p>
                   Two principals, not one agent stretched thin. Karen&rsquo;s three decades on the Westside and in Beverly Hills and Jack&rsquo;s working knowledge of the Valley and the broader Los Angeles market mean clients get genuine geographic depth and two sets of eyes on every decision. The collaboration, and the discipline behind it, is what has set the practice apart in one of the most competitive luxury markets in the country.{" "}
-                  <Link href="/meet-the-partners" className="text-navy-950 hover:text-gold-500 underline underline-offset-4 transition-colors">
+                  <Link href="/meet-the-partners" className="text-gold-500 hover:text-gold-400 underline underline-offset-4 transition-colors">
                     Meet the partners
                   </Link>
                   .
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </section>

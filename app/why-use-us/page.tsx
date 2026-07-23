@@ -83,16 +83,25 @@ export default function WhyUseUsPage() {
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* NEGOTIATION AND CLOSING — navy band (site-header navy), full-width dark band */}
+      <section className="bg-navy-950 py-20 md:py-28">
+        <div className="editorial">
+          <div>
+
             {/* NEGOTIATION AND CLOSING: text left, image right (alternating from FOR SELLERS) */}
             <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
               <div className="order-2 md:order-1">
                 <p className="text-[11px] font-medium text-gold-500 mb-4" style={{ letterSpacing: "0.18em" }}>
                   NEGOTIATION AND CLOSING
                 </p>
-                <h2 className="font-serif text-3xl md:text-4xl font-normal text-navy-950 mb-8" style={{ letterSpacing: "-0.01em" }}>
+                <h2 className="font-serif text-3xl md:text-4xl font-normal text-white mb-8" style={{ letterSpacing: "-0.01em" }}>
                   The two phases that matter most.
                 </h2>
-                <div className="space-y-5 text-base text-stone-700 leading-relaxed">
+                <div className="space-y-5 text-base text-white/85 leading-relaxed">
                   <p>
                     Two parts of a transaction matter more to outcomes than most clients expect when they first start the process: how the negotiation is run, and how the inspection period is managed.
                   </p>
