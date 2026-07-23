@@ -15,24 +15,24 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      // frymanranch.com is a legacy domain: its homepage should land on the
-      // Fryman Ranch history page. The apex (no www) is redirected out to the
-      // canonical www host + full URL; the www host redirects only its own
-      // homepage internally to /history/fryman-ranch.
+      // frymanranch.com is a legacy domain: every request to it (apex or www)
+      // is sent off-domain to the Fryman Ranch history page on the canonical
+      // frymancanyonhomes.com host. Keeping visitors on www.frymanranch.com
+      // broke site navigation, since menu links to '/' were redirected back to
+      // the history page.
       //
-      // IMPORTANT: source is '/' (homepage only), NOT '/:path*'. A catch-all on
-      // www.frymanranch.com would match /history/fryman-ranch itself and
-      // redirect the destination to itself, causing an infinite loop.
+      // Catch-all '/:path*' is safe here: the destination is a different host,
+      // so no request on frymanranch.com can redirect to itself.
       {
-        source: "/",
+        source: "/:path*",
         has: [{ type: "host", value: "frymanranch.com" }],
-        destination: "https://www.frymanranch.com/history/fryman-ranch",
+        destination: "https://www.frymancanyonhomes.com/history/fryman-ranch",
         permanent: true,
       },
       {
-        source: "/",
+        source: "/:path*",
         has: [{ type: "host", value: "www.frymanranch.com" }],
-        destination: "/history/fryman-ranch",
+        destination: "https://www.frymancanyonhomes.com/history/fryman-ranch",
         permanent: true,
       },
     ];
