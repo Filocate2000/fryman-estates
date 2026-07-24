@@ -96,8 +96,17 @@ export const siteConfig: SiteConfig = {
   name: "Fryman Canyon Estates",
   tagline: "Studio City",
   legalName: "Misraje Real Estate Partners",
+  // NOTE: `domain` is the lead-attribution key (SITE_KEY in the api/* routes,
+  // matched against ALLOWED_LEAD_SOURCES in the shared backend). It is kept as
+  // frymanestates.com to preserve CRM lead attribution and is intentionally
+  // separate from `url`. Do not change it without a coordinated backend change.
   domain: "frymanestates.com",
-  url: "https://www.frymanestates.com",
+  // Canonical/OG/sitemap origin. Set to the domain the site is actually SERVED
+  // on (www.frymancanyonhomes.com). frymanestates.com + www.frymanestates.com
+  // both 308-redirect here, so canonical + robots Host + sitemap now all agree
+  // with the served page (fixes the prior canonical-loop: served page declared
+  // frymanestates.com as canonical, which redirected back here).
+  url: "https://www.frymancanyonhomes.com",
   description:
     "Fryman Canyon Estates, the hyperlocal guide to the Fryman Canyon neighborhood of Studio City, presented by Misraje Real Estate Partners.",
 
