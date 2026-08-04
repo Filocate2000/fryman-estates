@@ -748,9 +748,9 @@ export function MarketReport({
   // property photos under public/images/Fryman Canyon Estates/ (spaces encoded
   // as %20 so the static paths resolve). Swap to dedicated report imagery later
   // by changing these constants.
-  const heroImage = "/images/Fryman%20Canyon%20Estates/4.jpg";
+  const heroImage = "/images/Fryman%20Canyon%20Estates/47.jpg";
   const galleryImages = [
-    "/images/Fryman%20Canyon%20Estates/47.jpg",
+    "/images/Fryman%20Canyon%20Estates/4.jpg",
     "/images/Fryman%20Canyon%20Estates/3280_Fryman_Rd_007-1542056840.jpg",
     "/images/Fryman%20Canyon%20Estates/12141_Iredell_Ave_5-1636149737.jpg",
   ];
