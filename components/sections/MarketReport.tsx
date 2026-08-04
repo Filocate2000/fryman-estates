@@ -766,6 +766,7 @@ export function MarketReport({
       <PageHero
         image={heroImage}
         alt={displayName}
+        objectPosition="center 80%"
         eyebrow="BUYING OR SELLING IN FRYMAN CANYON ESTATES"
         title={`${displayName} Market Overview`}
       />
