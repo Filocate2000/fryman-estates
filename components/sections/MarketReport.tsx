@@ -767,7 +767,7 @@ export function MarketReport({
         image={heroImage}
         alt={displayName}
         objectPosition="center 80%"
-        eyebrow="BUYING OR SELLING IN FRYMAN CANYON HOMES"
+        eyebrow="BUYING OR SELLING IN FRYMAN CANYON"
         title={`${displayName} Market Overview`}
       />
 
