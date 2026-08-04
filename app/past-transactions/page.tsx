@@ -23,7 +23,7 @@ export default async function PastTransactionsPage() {
     <div className="bg-navy-950 text-white">
       <PageHero
         image="/images/fryman/past-transactions.jpg"
-        alt="A pool and flagstone patio framed by mature greenery in Fryman Estates, Studio City."
+        alt="A pool and flagstone patio framed by mature greenery in Fryman Canyon Homes, Studio City."
         scrim="dark"
         eyebrow="Track Record"
         title="Past Transactions"

@@ -31,9 +31,9 @@ export default function HistoryPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <PageHero
-        eyebrow={siteConfig.name}
+        eyebrow={siteConfig.displayName}
         title="History"
-        subtitle="The story of the Fryman Canyon Estates neighborhood."
+        subtitle="The story of the Fryman Canyon Homes neighborhood."
       />
       <section className="bg-white py-20 md:py-28">
         <div className="editorial">

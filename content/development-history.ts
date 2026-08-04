@@ -19,17 +19,17 @@ export const developmentHistoryContent = {
     eyebrow: "Historical Information",
     // Hero H1, hard-broken into exactly two lines; joined for metadata/JSON-LD.
     titleLines: ["Development History of", "Briarcliff Manor Estates"],
-    subtitle: "Now Commonly Known as Fryman Canyon Estates in Studio City",
+    subtitle: "Now Commonly Known as Fryman Canyon Homes in Studio City",
     image: "3240 Fryman Road.jpg",
-    alt: "3240 Fryman Road, an early estate home in Briarcliff Manor Estates, now Fryman Estates, Studio City.",
+    alt: "3240 Fryman Road, an early estate home in Briarcliff Manor Estates, now Fryman Canyon Homes, Studio City.",
   },
 
   // Intro lede, rendered above the first section heading. Links the first
-  // "Fryman Estates" to the home page.
+  // "Fryman Canyon Homes" to the home page.
   intro: {
     lead:
       "If you're searching for luxury homes in a centrally located hillside neighborhood near both the San Fernando Valley and Hollywood/Westside, ",
-    homeText: "Fryman Estates",
+    homeText: "Fryman Canyon Homes",
     rest:
       " in Studio City stands out as one of the most desirable areas. Originally known as Briarcliff Manor Estates, this secluded enclave was first marketed in 1939 as the \"Beverly Hills of the Valley,\" a vision that continues to define the area's identity and appeal.",
   },
@@ -53,12 +53,12 @@ export const developmentHistoryContent = {
       file: "Fryman Rach Information Center and Home Sales Office 3399 Laurel Canyon.jpg",
       alt: "The original Fryman Ranch Information Center and Home Sales Office at 3399 Laurel Canyon, where buyers inquired about Briarcliff Manor Estates lots.",
       caption:
-        "Original tract agent location where buyers would inquire about purchasing a lot in Briarcliff Manor Estates, now known as Fryman Estates, during the 1940s.",
+        "Original tract agent location where buyers would inquire about purchasing a lot in Briarcliff Manor Estates, now known as Fryman Canyon Homes, during the 1940s.",
     },
     // Lead-in directly above Gallery A. Links "Fryman Ranch" to its page.
     galleryLeadIn: {
       lead:
-        "Below are early photos of Fryman Estates, capturing the raw landscape before any development began. This land was once part of ",
+        "Below are early photos of Fryman Canyon Homes, capturing the raw landscape before any development began. This land was once part of ",
       ranchText: "Fryman Ranch",
       rest:
         ", where Harry C. Fryman hosted picnics, veterans' gatherings, and civic events during the 1930s.",
@@ -131,19 +131,19 @@ export const developmentHistoryContent = {
   },
 
   today: {
-    heading: "Today: Fryman Estates Carries on the Briarcliff Legacy",
+    heading: "Today: Fryman Canyon Homes Carries on the Briarcliff Legacy",
     body: [
-      "While the name Briarcliff Manor Estates is no longer widely used, its spirit lives on in what locals now refer to as Fryman Estates. This neighborhood remains one of the most exclusive enclaves in Studio City. With its historic roots, large private lots, rustic trails, and architectural diversity, Fryman Estates continues to attract discerning buyers looking for timeless beauty and enduring value in Studio City real estate.",
-      "As real estate agents who specialize in this area, we know every trail, street, and story behind the properties that make Fryman Estates special. Understanding its development gives our clients an edge when buying or selling in this unique hillside community.",
+      "While the name Briarcliff Manor Estates is no longer widely used, its spirit lives on in what locals now refer to as Fryman Canyon Homes. This neighborhood remains one of the most exclusive enclaves in Studio City. With its historic roots, large private lots, rustic trails, and architectural diversity, Fryman Canyon Homes continues to attract discerning buyers looking for timeless beauty and enduring value in Studio City real estate.",
+      "As real estate agents who specialize in this area, we know every trail, street, and story behind the properties that make Fryman Canyon Homes special. Understanding its development gives our clients an edge when buying or selling in this unique hillside community.",
     ],
   },
 
   cta: {
-    heading: "Interested in Buying or Selling in Fryman Estates or West Laurelwood?",
+    heading: "Interested in Buying or Selling in Fryman Canyon Homes or West Laurelwood?",
     body:
-      "Whether you're looking to purchase a home in Fryman Estates or thinking about selling your property there, we offer a level of insight that only comes from direct experience. We have successfully represented multiple buyers and sellers in Fryman Estates and know how to position these properties for maximum value. From the layout of each street to the architectural nuances and buyer expectations, we understand what it takes to close in this exclusive neighborhood. Let us guide you through the process with the confidence that comes from truly knowing the area.",
+      "Whether you're looking to purchase a home in Fryman Canyon Homes or thinking about selling your property there, we offer a level of insight that only comes from direct experience. We have successfully represented multiple buyers and sellers in Fryman Canyon Homes and know how to position these properties for maximum value. From the layout of each street to the architectural nuances and buyer expectations, we understand what it takes to close in this exclusive neighborhood. Let us guide you through the process with the confidence that comes from truly knowing the area.",
     // Closing line; links "Contact Jack Misraje and Karen Misraje" to /contact.
-    closingLead: "Ready to explore Fryman Estates or learn more about available homes? ",
+    closingLead: "Ready to explore Fryman Canyon Homes or learn more about available homes? ",
     contactText: "Contact Jack Misraje and Karen Misraje",
     closingRest: " for a private tour or personalized insights.",
   },

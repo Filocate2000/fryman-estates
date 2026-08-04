@@ -14,22 +14,22 @@ export type BuyPhoto = { file: string; alt: string; caption?: string };
 export const buyingContent = {
   hero: {
     image: "Front of House.jpg",
-    eyebrow: "Experience Fryman Canyon Estates",
-    title: "Buying in Fryman Canyon Estates",
+    eyebrow: "Experience Fryman Canyon Homes",
+    title: "Buying in Fryman Canyon Homes",
     subtitle: "What you need to know about a competitive, sought-after market.",
   },
 
   welcome: {
-    eyebrow: "Buying in Fryman Estates",
+    eyebrow: "Buying in Fryman Canyon Homes",
     heading: "A neighborhood worth the wait.",
     body: [
-      "Fryman Canyon Estates is a small, private enclave in the Studio City hills, and homes here rarely come to market in large numbers. For buyers, that scarcity is part of the appeal: an address behind the gates and mature oaks of Fryman carries a sense of seclusion that is hard to find this close to the city.",
+      "Fryman Canyon Homes is a small, private enclave in the Studio City hills, and homes here rarely come to market in large numbers. For buyers, that scarcity is part of the appeal: an address behind the gates and mature oaks of Fryman carries a sense of seclusion that is hard to find this close to the city.",
       "Most of the homes sit on hillside lots shaped by the terrain, with architecture that ranges from the neighborhood's original ranch-style residences to Mid-Century Modern and Contemporary rebuilds. No two streets feel quite the same, yet the canyon setting, the landscaping, and the privacy carry through the whole neighborhood.",
       "Because so little trades in any given year, buying well here is as much about timing and relationships as it is about the search itself. The earlier you are positioned and ready, the better your odds when the right home appears.",
     ],
     featureImage: {
       file: "oakdell_residence_assembledge_lo.jpg",
-      alt: "Architect-designed contemporary residence in Fryman Canyon Estates",
+      alt: "Architect-designed contemporary residence in Fryman Canyon Homes",
       caption: "Architect-designed homes are a hallmark of the neighborhood.",
     } as BuyPhoto,
   },
@@ -44,7 +44,7 @@ export const buyingContent = {
     ],
     image: {
       file: "Front Gate Main.jpg",
-      alt: "Private gated entrance to a Fryman Canyon Estates property",
+      alt: "Private gated entrance to a Fryman Canyon Homes property",
       caption: "Gated, private drives are common throughout Fryman.",
     } as BuyPhoto,
   },
@@ -55,8 +55,8 @@ export const buyingContent = {
     intro:
       "A sense of the interiors, outdoor spaces, and canyon settings buyers find across the neighborhood.",
     photos: [
-      { file: "Living Room.jpg", alt: "Light-filled living room in a Fryman Canyon Estates home" },
-      { file: "Kitchen.jpg", alt: "Updated kitchen in a Fryman Canyon Estates home" },
+      { file: "Living Room.jpg", alt: "Light-filled living room in a Fryman Canyon Homes home" },
+      { file: "Kitchen.jpg", alt: "Updated kitchen in a Fryman Canyon Homes home" },
       { file: "Backyard Pool.jpg", alt: "Backyard pool framed by canyon landscaping" },
       { file: "Den.jpg", alt: "Comfortable den with warm natural light" },
       { file: "Backyard Full View.jpg", alt: "Full view of a private backyard and hillside setting" },

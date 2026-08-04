@@ -39,8 +39,13 @@ export type SocialLink = {
 export type SiteConfig = {
   /** Supabase / lead-source site key. Distinguishes sibling sites in the shared backend. */
   siteKey: string;
-  /** Public neighborhood-site name shown in the wordmark and titles. */
+  /** Neighborhood name used in SEO surfaces only (page <title>, OpenGraph,
+   *  JSON-LD). NOT rendered as visible on-page copy - use `displayName` for that. */
   name: string;
+  /** Visible neighborhood name shown in on-page copy (wordmark, hero eyebrows).
+   *  Kept separate from `name` so the visible brand can change without disturbing
+   *  the SEO title/OG history tied to `name`. */
+  displayName: string;
   /** Short tagline under the wordmark. */
   tagline: string;
   /** The brokerage/legal entity behind the site. */
@@ -93,7 +98,11 @@ export type SiteConfig = {
 
 export const siteConfig: SiteConfig = {
   siteKey: "fryman",
+  // SEO-only name (page titles / OG / JSON-LD). Left as-is intentionally so the
+  // rebrand to "Fryman Canyon Homes" does not disturb existing SEO. Visible copy
+  // reads `displayName` instead.
   name: "Fryman Canyon Estates",
+  displayName: "Fryman Canyon Homes",
   tagline: "Studio City",
   legalName: "Misraje Real Estate Partners",
   // NOTE: `domain` is the lead-attribution key (SITE_KEY in the api/* routes,

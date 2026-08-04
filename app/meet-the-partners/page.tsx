@@ -83,7 +83,7 @@ export default async function MeetThePartnersPage() {
     <>
       <PageHero
         image="/images/fryman/meet-the-partners.jpg"
-        alt="A Spanish ranch-style estate with a broad lawn and mature trees in Fryman Estates, Studio City."
+        alt="A Spanish ranch-style estate with a broad lawn and mature trees in Fryman Canyon Homes, Studio City."
         scrim="dark"
         eyebrow="The Partners"
         title="Meet the Partners"

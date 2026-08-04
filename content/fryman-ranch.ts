@@ -14,7 +14,7 @@ export const frymanRanchContent = {
     eyebrow: "Historical Information",
     title: "Fryman Ranch",
     subtitle:
-      "The Roots of Fryman Estates in Studio City: A Historic Location for Film and Community Events",
+      "The Roots of Fryman Canyon Homes in Studio City: A Historic Location for Film and Community Events",
     image: "tower-of-lies-fryman-ranch.jpg",
     alt: "A couple embracing in a field at Fryman Ranch in a scene from Tower of Lies (1925), Studio City.",
   },

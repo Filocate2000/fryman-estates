@@ -12,22 +12,22 @@ export type SellPhoto = { file: string; alt: string; caption?: string };
 export const sellingContent = {
   hero: {
     image: "44.jpg",
-    eyebrow: "Experience Fryman Canyon Estates",
-    title: "Selling in Fryman Canyon Estates",
+    eyebrow: "Experience Fryman Canyon Homes",
+    title: "Selling in Fryman Canyon Homes",
     subtitle: "What you need to know about a discreet, high-demand market.",
   },
 
   welcome: {
-    eyebrow: "Selling in Fryman Estates",
+    eyebrow: "Selling in Fryman Canyon Homes",
     heading: "A neighborhood buyers wait for.",
     body: [
-      "Fryman Canyon Estates is a small, private enclave in the Studio City hills, and homes here rarely come to market in large numbers. For sellers, that scarcity works in your favor: an address behind the gates and mature oaks of Fryman carries a seclusion that buyers actively seek out and are willing to wait for.",
+      "Fryman Canyon Homes is a small, private enclave in the Studio City hills, and homes here rarely come to market in large numbers. For sellers, that scarcity works in your favor: an address behind the gates and mature oaks of Fryman carries a seclusion that buyers actively seek out and are willing to wait for.",
       "Most of the homes sit on hillside lots shaped by the terrain, with architecture that ranges from the neighborhood's original ranch-style residences to Mid-Century Modern and Contemporary rebuilds. That variety means each home tells its own story, and presenting that story well is what separates a good result from an exceptional one.",
       "Because so little trades in any given year, selling well here is as much about positioning and relationships as it is about the listing itself. The right buyer is often already waiting. The work is reaching them at the right moment, on the right terms.",
     ],
     featureImage: {
       file: "12141_Iredell_Ave_13-1636149775.jpg",
-      alt: "Home in Fryman Canyon Estates",
+      alt: "Home in Fryman Canyon Homes",
     } as SellPhoto,
   },
 
@@ -41,7 +41,7 @@ export const sellingContent = {
     ],
     image: {
       file: "12141_Iredell_Ave_36-1636149937.jpg",
-      alt: "Home in Fryman Canyon Estates",
+      alt: "Home in Fryman Canyon Homes",
     } as SellPhoto,
   },
 
@@ -51,12 +51,12 @@ export const sellingContent = {
     intro:
       "A sense of the interiors, outdoor spaces, and canyon settings that draw buyers to the neighborhood, and a feel for how we position a Fryman home to show its strongest self.",
     photos: [
-      { file: "23.jpg", alt: "Home in Fryman Canyon Estates" },
-      { file: "3280_Fryman_Rd_017-1542056973.jpg", alt: "Interior of a Fryman Canyon Estates home" },
-      { file: "3280_Fryman_Rd_028-1542057127.jpg", alt: "Interior of a Fryman Canyon Estates home" },
-      { file: "3280_Fryman_Rd_039-1542057297.jpg", alt: "Outdoor space at a Fryman Canyon Estates home" },
-      { file: "3280_Fryman_Rd_042-1542057372.jpg", alt: "Outdoor space at a Fryman Canyon Estates home" },
-      { file: "9.jpg", alt: "Home in Fryman Canyon Estates" },
+      { file: "23.jpg", alt: "Home in Fryman Canyon Homes" },
+      { file: "3280_Fryman_Rd_017-1542056973.jpg", alt: "Interior of a Fryman Canyon Homes home" },
+      { file: "3280_Fryman_Rd_028-1542057127.jpg", alt: "Interior of a Fryman Canyon Homes home" },
+      { file: "3280_Fryman_Rd_039-1542057297.jpg", alt: "Outdoor space at a Fryman Canyon Homes home" },
+      { file: "3280_Fryman_Rd_042-1542057372.jpg", alt: "Outdoor space at a Fryman Canyon Homes home" },
+      { file: "9.jpg", alt: "Home in Fryman Canyon Homes" },
     ] as SellPhoto[],
   },
 
@@ -81,7 +81,7 @@ export const sellingContent = {
 
   cta: {
     eyebrow: "Confidential Seller List",
-    heading: "Join the Fryman Estates Seller List",
+    heading: "Join the Fryman Canyon Homes Seller List",
     body: "Not every Fryman homeowner is ready to sell, and many would only consider it for the right buyer, with complete privacy. Our confidential Seller List lets you explore what your home could command, stay close to neighborhood demand, and be introduced to vetted buyers quietly, before anything reaches the MLS. No obligation, no public exposure.",
     buttonLabel: "Join the Seller List",
     buttonHref: "/seller-list",

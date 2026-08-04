@@ -19,7 +19,7 @@ export default function WhyUseUsPage() {
     <>
       <PageHero
         image="/images/fryman/why-use-us.jpg"
-        alt="A covered patio opening to a pool and hillside garden in Fryman Estates, Studio City."
+        alt="A covered patio opening to a pool and hillside garden in Fryman Canyon Homes, Studio City."
         scrim="dark"
         eyebrow="Our Practice"
         title="Why Use Us"

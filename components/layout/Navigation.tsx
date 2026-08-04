@@ -45,7 +45,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Why Use Us", href: "/why-use-us" },
   { label: "Past Transactions", href: "/past-transactions" },
   { label: "Contact", href: "/contact" },
-  { label: "Fryman Canyon Estates Market Report", href: "/market-report" },
+  { label: "Fryman Canyon Homes Market Report", href: "/market-report" },
 ];
 
 // Scroll threshold past which the nav adopts its "scrolled" state: solid navy
@@ -218,7 +218,7 @@ export function Navigation() {
 
           <div className="flex items-center gap-3 mb-5">
             <div className="text-white text-[10px] font-medium tracking-[0.3em] uppercase">
-              {siteConfig.name}
+              {siteConfig.displayName}
             </div>
             <div className="flex-1 h-px bg-white/12" />
             <div className="text-gold-500/80 text-[8px] tracking-[0.28em] uppercase">

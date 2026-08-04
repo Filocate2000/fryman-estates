@@ -18,7 +18,7 @@ const FOOTER_LINKS: { heading: string; links: { label: string; href: string }[] 
       { label: "Resources", href: "/homeowners" },
       { label: "Emergency Contacts", href: "/homeowners/emergency-contacts" },
       { label: "Neighborhood Watch", href: "/homeowners/neighborhood-watch" },
-      { label: "Looking to Purchase in Fryman Estates", href: "/buying" },
+      { label: "Looking to Purchase in Fryman Canyon Homes", href: "/buying" },
       { label: "Join Confidential Sellers List", href: "/seller-list" },
     ],
   },

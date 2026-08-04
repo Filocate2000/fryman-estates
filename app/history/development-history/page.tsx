@@ -63,7 +63,7 @@ const buildPhotos = (files: readonly string[]): GalleryPhoto[] =>
       // encodeURI preserves the path slashes while escaping the spaces in the
       // original filenames.
       src: encodeURI(DIR + file),
-      alt: `${name}: Fryman Estates (formerly Briarcliff Manor Estates), Studio City.`,
+      alt: `${name}: Fryman Canyon Homes (formerly Briarcliff Manor Estates), Studio City.`,
       caption: name,
     };
   });

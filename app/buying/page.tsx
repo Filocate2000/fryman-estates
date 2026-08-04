@@ -29,14 +29,14 @@ const FRAME =
 // Closing copy for the buyer inquiry form, in the buyer voice (parallel to the
 // seller-list page's closing). No em dashes per the content style guide.
 const BUYER_CLOSING =
-  "Whether you're actively searching or simply want to know when the right home comes up, joining our Buyer List puts you first in line for Fryman Estates homes, including quiet, off-market opportunities before they reach the MLS. We've lived and worked in this community since the 1970s, and no one understands Fryman Estates better than we do.";
+  "Whether you're actively searching or simply want to know when the right home comes up, joining our Buyer List puts you first in line for Fryman Canyon Homes homes, including quiet, off-market opportunities before they reach the MLS. We've lived and worked in this community since the 1970s, and no one understands Fryman Canyon Homes better than we do.";
 
 export default function BuyingPage() {
   return (
     <>
       <PageHero
         image={pic(c.hero.image)}
-        alt="Front exterior of a home in Fryman Canyon Estates"
+        alt="Front exterior of a home in Fryman Canyon Homes"
         eyebrow={c.hero.eyebrow}
         title={c.hero.title}
         subtitle={c.hero.subtitle}
@@ -191,7 +191,7 @@ export default function BuyingPage() {
           <div className="w-full">
             <p className="eyebrow text-gold-500 mb-4">Confidential Buyer Profile</p>
             <h2 className="font-display font-light text-3xl md:text-4xl text-white mb-6">
-              Join the Fryman Estates Buyer List
+              Join the Fryman Canyon Homes Buyer List
             </h2>
             <span className="gold-rule mb-8" />
             <p className="text-ink-200 leading-relaxed max-w-3xl mb-10">

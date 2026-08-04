@@ -32,9 +32,9 @@ export const metadata: Metadata = {
 // Stored as constants and rendered via {expressions} so apostrophes/quotes need
 // no JSX entity escaping. NO em dashes (none in the source).
 const INTRO_1 =
-  "Not every Fryman Estates homeowner is ready to sell. Many would consider it if the right price or buyer came along. For others, privacy is critical. They do not want neighbors or the public to know their home is being offered. That is why we created our Seller List.";
+  "Not every Fryman Canyon Homes homeowner is ready to sell. Many would consider it if the right price or buyer came along. For others, privacy is critical. They do not want neighbors or the public to know their home is being offered. That is why we created our Seller List.";
 const INTRO_2 =
-  "By joining, you gain access to our exclusive network of qualified buyers who are actively searching for homes in Fryman Estates. These buyers are vetted, serious, and often willing to make compelling offers before a home ever appears on the MLS.";
+  "By joining, you gain access to our exclusive network of qualified buyers who are actively searching for homes in Fryman Canyon Homes. These buyers are vetted, serious, and often willing to make compelling offers before a home ever appears on the MLS.";
 
 const WHY_JOIN = [
   "Explore what your home could command in today's market without any obligation to sell",
@@ -45,22 +45,22 @@ const WHY_JOIN = [
 ];
 
 const WHAT_WE_PROVIDE = [
-  "Exclusive updates on Fryman Estates buyer demand",
+  "Exclusive updates on Fryman Canyon Homes buyer demand",
   "Private communication with serious, vetted buyers matched to your property profile",
   "Market insight into which features and locations are commanding premium prices",
   "Flexible options with no obligation to move forward unless the timing and offer are right for you",
 ];
 
 const CLOSING =
-  "Whether you're ready to sell soon or simply want to stay connected to the Fryman Estates market, joining our Seller List ensures you'll always have the inside track. We've lived and worked in this community since the 1970s, and no one understands Fryman Estates better than we do.";
+  "Whether you're ready to sell soon or simply want to stay connected to the Fryman Canyon Homes market, joining our Seller List ensures you'll always have the inside track. We've lived and worked in this community since the 1970s, and no one understands Fryman Canyon Homes better than we do.";
 
 export default function SellerListPage() {
   return (
     <>
       <PageHero
         image={pic("25.jpg")}
-        alt="Swimming pool with lounge chairs at a Fryman Canyon Estates home"
-        title="Join the Fryman Estates Seller List"
+        alt="Swimming pool with lounge chairs at a Fryman Canyon Homes home"
+        title="Join the Fryman Canyon Homes Seller List"
         subtitle="Discreet. Informed. Connected."
         scrim="dark"
       />
@@ -113,7 +113,7 @@ export default function SellerListPage() {
                   <div className="relative h-full w-full overflow-hidden">
                     <Image
                       src={fce("4.jpg")}
-                      alt="Exterior and porte-cochere of a Fryman Canyon Estates home"
+                      alt="Exterior and porte-cochere of a Fryman Canyon Homes home"
                       fill
                       priority
                       sizes="(min-width: 768px) 45vw, 100vw"
@@ -126,7 +126,7 @@ export default function SellerListPage() {
                   <div className="relative h-full w-full overflow-hidden">
                     <Image
                       src={fce("47.jpg")}
-                      alt="Swimming pool and stone patio at a Fryman Canyon Estates home"
+                      alt="Swimming pool and stone patio at a Fryman Canyon Homes home"
                       fill
                       loading="lazy"
                       sizes="(min-width: 768px) 22vw, 50vw"
@@ -139,7 +139,7 @@ export default function SellerListPage() {
                   <div className="relative h-full w-full overflow-hidden">
                     <Image
                       src={fce("12141_Iredell_Ave_5-1636149737.jpg")}
-                      alt="Living room interior of a Fryman Canyon Estates home"
+                      alt="Living room interior of a Fryman Canyon Homes home"
                       fill
                       loading="lazy"
                       sizes="(min-width: 768px) 22vw, 50vw"
@@ -152,7 +152,7 @@ export default function SellerListPage() {
                   <div className="relative h-full w-full overflow-hidden">
                     <Image
                       src={fce("3280_Fryman_Rd_007-1542056840.jpg")}
-                      alt="Backyard lawn and mature tree at a Fryman Canyon Estates home"
+                      alt="Backyard lawn and mature tree at a Fryman Canyon Homes home"
                       fill
                       loading="lazy"
                       sizes="(min-width: 768px) 22vw, 50vw"
@@ -165,7 +165,7 @@ export default function SellerListPage() {
                   <div className="relative h-full w-full overflow-hidden">
                     <Image
                       src={fce("3280_Fryman_Rd_037-1542057250.jpg")}
-                      alt="Covered outdoor lounge at a Fryman Canyon Estates home"
+                      alt="Covered outdoor lounge at a Fryman Canyon Homes home"
                       fill
                       loading="lazy"
                       sizes="(min-width: 768px) 22vw, 50vw"

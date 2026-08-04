@@ -7,7 +7,7 @@ import { absoluteUrl } from "@/lib/site-config";
 // laurelwood_commentary. Used ONLY for the DB query, never shown to users.
 const NEIGHBORHOOD = "Fryman Estates";
 // Display name: what users see everywhere on the page.
-const DISPLAY_NAME = "Fryman Canyon Estates";
+const DISPLAY_NAME = "Fryman Canyon Homes";
 const DESCRIPTION =
   "Active listings, pending sales, and recent sales for Fryman Canyon Estates.";
 

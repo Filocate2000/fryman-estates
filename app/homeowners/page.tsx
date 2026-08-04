@@ -38,7 +38,7 @@ export default function HomeownersPage() {
       <PageHero
         eyebrow="For Residents"
         title="Homeowners"
-        subtitle="Practical resources for the people who live in Fryman Canyon Estates."
+        subtitle="Practical resources for the people who live in Fryman Canyon Homes."
       />
       <section className="bg-white py-20 md:py-28">
         <div className="editorial">

@@ -27,7 +27,7 @@ const SITE_FRIENDLY: Record<string, string> = {
   "eastlaurelwood.com": "East Laurelwood",
   "westlaurelwood.com": "West Laurelwood",
   "thedonastreets.com": "The Dona Streets",
-  "frymanestates.com": "Fryman Canyon Estates",
+  "frymanestates.com": "Fryman Canyon Homes",
   "misraje.com": "Misraje Real Estate",
   "trose.com": "Trose",
 };

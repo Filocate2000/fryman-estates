@@ -31,7 +31,7 @@ export const harryFrymanContent = {
     closing:
       "In 1900, Fryman married Mae A. Fox. By 1905, he had made a significant mark on downtown Los Angeles by building the Hotel Hayward at 6th and Spring Street, the former location of the original Ralphs grocery store. The hotel was an early success, leading to expansions in the late 1910s and again in the mid-1920s. Fryman's nephews worked closely with him, including Russell H. Wagener, who managed Hotel Hayward for many years.",
     portraitAlt:
-      "Portrait of Harry C. Fryman, the developer and hotelier behind Fryman Estates.",
+      "Portrait of Harry C. Fryman, the developer and hotelier behind Fryman Canyon Homes.",
   },
 
   annex: {
@@ -60,7 +60,7 @@ export const harryFrymanContent = {
     heading: "Real Estate Ventures",
     intro:
       "While growing his hospitality career, Fryman became deeply involved in real estate development across the Los Angeles region. His work helped shape several communities, and his development projects included:",
-    // The final entry links "Fryman Estates" to the site home page; the page
+    // The final entry links "Fryman Canyon Homes" to the site home page; the page
     // renders that bullet with the {HOME} link.
     projects: [
       "Commonwealth Home Builders in Watts",
@@ -72,7 +72,7 @@ export const harryFrymanContent = {
     ],
     finalProjectLead:
       "Briarcliff Manor Estates in Studio City, known today as ",
-    finalProjectLinkText: "Fryman Estates",
+    finalProjectLinkText: "Fryman Canyon Homes",
   },
 
   ranch: {
@@ -106,11 +106,11 @@ export const harryFrymanContent = {
     heading: "Lasting Legacy",
     first:
       "Harry Fryman retired in 1943 following the sale of the Hotel Hayward and passed away in 1946. In addition to his business achievements, he remained civically active throughout his life. He served on both the Los Angeles Civil Service Commission and the Police Commission, holding leadership roles and contributing to public service in meaningful ways.",
-    // Final paragraph carries three links: Fryman Estates (home), Development
+    // Final paragraph carries three links: Fryman Canyon Homes (home), Development
     // History page, and Contact page. The page renders the {HOME}, {DEVHISTORY}
     // and {CONTACT} tokens inline.
     closingLead: "Fryman's legacy lives on in the neighborhoods he helped shape and the institutions he helped build. From the heart of downtown Los Angeles to the tranquil hills of ",
-    closingHomeText: "Fryman Estates",
+    closingHomeText: "Fryman Canyon Homes",
     closingMid: ", his influence is woven into the fabric of the city. To learn more, visit our ",
     closingDevHistoryText: "development history",
     closingMid2: " or reach out on our ",

@@ -20,7 +20,7 @@ export default function WhoWeArePage() {
     <>
       <PageHero
         image="/images/fryman/who-we-are.jpg"
-        alt="A mid-century home with a fire feature and landscaped grounds in Fryman Estates, Studio City."
+        alt="A mid-century home with a fire feature and landscaped grounds in Fryman Canyon Homes, Studio City."
         scrim="dark"
         eyebrow="The Firm"
         title="Who We Are"

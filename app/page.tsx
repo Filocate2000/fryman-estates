@@ -77,7 +77,7 @@ export default function HomePage() {
             href="/history"
             className="mt-8 inline-flex items-center gap-2 text-[12px] uppercase tracking-[0.2em] text-navy-950 hover:text-gold-600 transition-colors"
           >
-            Discover the History of Fryman Canyon Estates
+            Discover the History of Fryman Canyon Homes
             <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>

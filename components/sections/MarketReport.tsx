@@ -767,7 +767,7 @@ export function MarketReport({
         image={heroImage}
         alt={displayName}
         objectPosition="center 80%"
-        eyebrow="BUYING OR SELLING IN FRYMAN CANYON ESTATES"
+        eyebrow="BUYING OR SELLING IN FRYMAN CANYON HOMES"
         title={`${displayName} Market Overview`}
       />
 
@@ -804,7 +804,7 @@ export function MarketReport({
           {/* CTA — WHITE (selling) */}
           <CtaBand
             heading={`Thinking of selling in ${displayName}?`}
-            body="Get a custom opinion of value based on the most recent sales, current competition, and buyer demand in Fryman Canyon Estates."
+            body="Get a custom opinion of value based on the most recent sales, current competition, and buyer demand in Fryman Canyon Homes."
             cta="Request a Home Valuation"
             href="/contact"
           />

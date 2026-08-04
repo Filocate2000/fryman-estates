@@ -31,7 +31,7 @@ export default function SellingPage() {
     <>
       <PageHero
         image={pic(c.hero.image)}
-        alt="Home in Fryman Canyon Estates"
+        alt="Home in Fryman Canyon Homes"
         eyebrow={c.hero.eyebrow}
         title={c.hero.title}
         subtitle={c.hero.subtitle}

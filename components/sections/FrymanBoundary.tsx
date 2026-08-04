@@ -124,7 +124,7 @@ function MapCanvas() {
       onLoad={(m) => setMap(m)}
     >
       <PolygonF path={FRYMAN_BOUNDARY} options={POLY_OPTIONS} />
-      <AreaLabel position={centroid(FRYMAN_BOUNDARY)} text="Fryman Canyon Estates" />
+      <AreaLabel position={centroid(FRYMAN_BOUNDARY)} text="Fryman Canyon Homes" />
     </GoogleMap>
   );
 }
