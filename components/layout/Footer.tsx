@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 
 // Footer link columns. Fryman has no sub-neighborhoods, so laurelwood's
@@ -109,14 +110,18 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Affiliation band: Coldwell Banker Global Luxury + Equal Housing */}
+        {/* Affiliation logos band: Coldwell Banker Global Luxury + Equal Housing
+            Opportunity. The CB Global Luxury logo (white) is reproduced from
+            laurelwood-site / misraje-site so the firm branding matches across
+            every neighborhood site. */}
         <div className="border-t border-white/5 py-10 flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
-          <div className="text-center md:text-left">
-            <p className="text-white/80 text-sm font-display font-light tracking-[0.18em] uppercase">
-              {siteConfig.brokerage.name}
-            </p>
-            <p className="text-ink-300 text-[11px] mt-1">{siteConfig.brokerage.license}</p>
-          </div>
+          <Image
+            src="/images/cb-global-luxury-white.png"
+            alt="Coldwell Banker Global Luxury"
+            width={220}
+            height={55}
+            className="opacity-80"
+          />
           <div className="flex items-center gap-3 text-white/70">
             <svg
               role="img"
